@@ -1,4 +1,4 @@
-# 1_INFOMATE
+# 01INFOMATE
 
 ## 1. 프로젝트 소개
 ### 당신의 유연한 업무를 위한 그룹웨어 “인포메이트”
@@ -93,25 +93,37 @@ OtherSoftware : DA#5, Figma <br />
 ## 5. 실제 구현 화면
 
 <img src="cal9.jpg" />
+
 <img src="cal1.jpg" />
+
 <img src="cal2.jpg" />
+
 <img src="cal3.jpg" />
+
 <img src="cal4.jpg" />
+
 <img src="cal5.jpg" />
+
 <img src="cal6.jpg" />
+
 <img src="cal7.jpg" />
+
 <img src="cal8.jpg" />
 
 ## 6. 인상깊은 혹은 주요 코드들
 
 ### 6-1. SpringBoot
 <img src="boot01.jpg" />
+
 <img src="boot02.jpg" />
+
 <img src="boot03.jpg" />
 
 ### 6-2. Front - React
 <img src="react01.jpg" />
+
 <img src="react02.jpg" />
+
 <img src="react03.jpg" />
 
 
