@@ -1,11 +1,11 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
-
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
+        <link href="https://github.com/yoosc89">Github</link>
+        <link href="https://certain-allspice-c69.notion.site/Dev-Study-58e7068499db4c8d8e0dc4250d5d44de?pvs=4">Notion</link>\
         <copyright>Copyright 2023. Orrorin All pictures cannot be copied without permission.</copyright>
-        <link href="https://github.com/yoosc89">GITHUB</link>
     </footer>
 </buildprofiles>

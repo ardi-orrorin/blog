@@ -127,8 +127,8 @@ OtherSoftware : DA#5, Figma <br />
 
 <img src="react03.jpg" alt="" />
 
-
-<seealso style="links">
+## 7. 마무리
+<seealso style="cards">
     <category ref="git" >
         <a href="https://github.com/IMFOMATE/infomate_back" > BackEnd-SpringBoot-Repository </a>
         <a href="https://github.com/IMFOMATE/infomate_front" > FrontEnd-React-Repository </a>
