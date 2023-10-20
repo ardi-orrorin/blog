@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE instance-profile
-        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+<!DOCTYPE instance-profile SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="hi"
                  name="Portfolio"
                  start-page="start.md">
-
     <toc-element topic="start.md"/>
-    <toc-element topic="Overview.md"/>
-    <toc-element topic="Tutorial.md"/>
-    <toc-element topic="01INFOMATE.md"/>
-    <toc-element topic="Reference.md"/>
-    <toc-element topic="Starter.md"/>
+    <toc-element toc-title="Proeject" sort-children="ascending">
+        <toc-element topic="01INFOMATE.md"/>
+    </toc-element>
 </instance-profile>

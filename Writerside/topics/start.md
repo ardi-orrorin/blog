@@ -55,6 +55,6 @@
 </table>
 
 ## PROJECT LIST
-[01. INFOMATE](01INFOMATE.md)
+1. [INFOMATE](01INFOMATE.md)
 
 
