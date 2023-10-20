@@ -1,4 +1,4 @@
-# 01INFOMATE
+# 01.INFOMATE
 
 ## 1. 프로젝트 소개
 
@@ -16,7 +16,7 @@
 ## 2. Tech Stack
 <table>
    <tr>
-      <td><img src="oracle.jpg" alt="" /></td>
+      <td><img src="oracle.jpg" alt=""/></td>
       <td><img src="mongodb.jpg" alt="" /></td>
       <td><img src="java.jpg" alt="" /></td>
       <td><img src="springboot.jpg" alt="" /></td>
