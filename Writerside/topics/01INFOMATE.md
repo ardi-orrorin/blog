@@ -34,14 +34,14 @@
    </tr>
 </table>
 
-DB : Oracle, MongoDB <br>
-Language : JAVA, JavaScript <br>
-Markup Language : HTML, CSS <br>
-Backend FrameWork : Spring Boot, Kafka <br>
-FrontFramework : React <br>
-Frontend Library : Sunediter, fullCalendar, jsTree <br>
-IDE : IntelliJ <br>
-OtherSoftware : DA#5, Figma <br>
+DB : Oracle, MongoDB <br />
+Language : JAVA, JavaScript <br />
+Markup Language : HTML, CSS <br />
+Backend FrameWork : Spring Boot, Kafka <br />
+FrontFramework : React <br />
+Frontend Library : Sunediter, fullCalendar, jsTree <br />
+IDE : IntelliJ <br />
+OtherSoftware : DA#5, Figma <br />
 
 ## 3. 참여 및 담당
 
