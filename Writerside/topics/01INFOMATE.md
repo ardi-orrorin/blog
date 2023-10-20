@@ -1,6 +1,7 @@
 # 01INFOMATE
 
 ## 1. 프로젝트 소개
+
 ### 당신의 유연한 업무를 위한 그룹웨어 “인포메이트”
 
 유연근무제를 도입했는데 업무관리가 걱정되신다구요?
@@ -15,22 +16,22 @@
 ## 2. Tech Stack
 <table>
    <tr>
-      <td><img src="oracle.jpg" /></td>
-      <td><img src="mongodb.jpg" /></td>
-      <td><img src="java.jpg" /></td>
-      <td><img src="springboot.jpg" /></td>
+      <td><img src="oracle.jpg" alt="" /></td>
+      <td><img src="mongodb.jpg" alt="" /></td>
+      <td><img src="java.jpg" alt="" /></td>
+      <td><img src="springboot.jpg" alt="" /></td>
    </tr>
    <tr>
-      <td><img src="html.jpg" /></td>
-      <td><img src="css.jpg" /></td>
-      <td><img src="react.jpg" /></td>
-      <td><img src="kafka.jpg" /></td>
+      <td><img src="html.jpg" alt="" /></td>
+      <td><img src="css.jpg" alt="" /></td>
+      <td><img src="react.jpg" alt="" /></td>
+      <td><img src="kafka.jpg" alt="" /></td>
    </tr>
    <tr>
-      <td><img src="intelij.jpg" /></td>
-      <td><img src="vscode.jpg" /></td>
-      <td><img src="figma.jpg" /></td>
-      <td><img src="notion.jpg" /></td>
+      <td><img src="intelij.jpg" alt="" /></td>
+      <td><img src="vscode.jpg" alt=""/></td>
+      <td><img src="figma.jpg" alt="" /></td>
+      <td><img src="notion.jpg" alt="" /></td>
    </tr>
 </table>
 
@@ -56,18 +57,18 @@ OtherSoftware : DA#5, Figma <br />
 ## 4. 프로젝트 기획
 
 ### 4-1. 요구 사항 명세서 Notion (일부)
-<img src="notion01.jpg" />
+<img src="notion01.jpg" alt="" />
 
 ### 4-2. UX / UI - FIGMA
 
 ### 4-2-1. 스케쥴 관리(캘린더)
-<img src="fimga.jpg"/>
+<img src="fimga.jpg" alt="" />
 
 ### 4-2-2. 전체 내용
-<img src="figma_full.jpg"/>
+<img src="figma_full.jpg" alt="" />
 
 ### 4-3. DB 모델링
-<img src="DBModel.png"/>
+<img src="DBModel.png" alt="" />
 
 ### 4-4. 캘린더 주요 기능
 1. 캘린더 표시 여부에 따른 필터링
@@ -92,45 +93,45 @@ OtherSoftware : DA#5, Figma <br />
 
 ## 5. 실제 구현 화면
 
-<img src="cal9.jpg" />
+<img src="cal9.jpg" alt="" />
 
-<img src="cal1.jpg" />
+<img src="cal1.jpg" alt="" />
 
-<img src="cal2.jpg" />
+<img src="cal2.jpg" alt="" />
 
-<img src="cal3.jpg" />
+<img src="cal3.jpg" alt="" />
 
-<img src="cal4.jpg" />
+<img src="cal4.jpg" alt="" />
 
-<img src="cal5.jpg" />
+<img src="cal5.jpg" alt="" />
 
-<img src="cal6.jpg" />
+<img src="cal6.jpg" alt="" />
 
-<img src="cal7.jpg" />
+<img src="cal7.jpg" alt="" />
 
-<img src="cal8.jpg" />
+<img src="cal8.jpg" alt="" />
 
 ## 6. 인상깊은 혹은 주요 코드들
 
 ### 6-1. SpringBoot
-<img src="boot01.jpg" />
+<img src="boot01.jpg" alt="" />
 
-<img src="boot02.jpg" />
+<img src="boot02.jpg" alt="" />
 
-<img src="boot03.jpg" />
+<img src="boot03.jpg" alt="" />
 
 ### 6-2. Front - React
-<img src="react01.jpg" />
+<img src="react01.jpg" alt="" />
 
-<img src="react02.jpg" />
+<img src="react02.jpg" alt="" />
 
-<img src="react03.jpg" />
+<img src="react03.jpg" alt="" />
 
 
 <seealso style="links">
-    <category name="repository Link" ref="git" >
-        <a href="https://github.com/IMFOMATE/infomate_back">BackEnd-SpringBoot-Repository</a>
-        <a href="https://github.com/IMFOMATE/infomate_front">FrontEnd-React-Repository</a>
-        <a href="https://github.com/yoosc89/INFOMATE_Kafka_MongoDB">BackEnd-Kafka&MongoDB-Repository</a>
+    <category ref="git" >
+        <a href="https://github.com/IMFOMATE/infomate_back" > BackEnd-SpringBoot-Repository </a>
+        <a href="https://github.com/IMFOMATE/infomate_front" > FrontEnd-React-Repository </a>
+        <a href="https://github.com/yoosc89/INFOMATE_Kafka_MongoDB" > BackEnd-Kafka-MongoDB-Repository </a>
     </category>
 </seealso>
