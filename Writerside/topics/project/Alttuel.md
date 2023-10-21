@@ -29,16 +29,16 @@
         </table>
     </tab>
     <tab title="Text">
-        <p>
-            DB : Mysql(MariaDB) <br />
-            Backend : Java, Python <br />  
-            Backend Framwork : SpringBoot, FASTAPI <br />  
-            Frontend : HTML, Javascript, CSS <br />
-            Frontend WebFramework : Svelte, Bootstrap <br />  
-            Server : Nginx <br />
-            Other : Docker <br />
-            IDE : VScode <br />
-        </p>
+        <list>
+            <li>DB : Mysql(MariaDB)</li>
+            <li>Backend : Java, Python</li>
+            <li>Backend Framwork : SpringBoot, FASTAPI</li>
+            <li>Frontend : HTML, Javascript, CSS</li>
+            <li>Frontend WebFramework : Svelte, Bootstrap</li>
+            <li>Server : Nginx</li>
+            <li>Other : Docker</li>
+            <li>IDE : VScode</li>
+        </list>
     </tab>
 </tabs>
 

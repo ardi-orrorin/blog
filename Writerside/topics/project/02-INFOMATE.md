@@ -14,39 +14,48 @@
 
 
 ## 2. Tech Stack
-<table>
-   <tr>
-      <td><img src="oracle.jpg" alt=""/></td>
-      <td><img src="mongodb.jpg" alt="" /></td>
-      <td><img src="java.jpg" alt="" /></td>
-      <td><img src="springboot.jpg" alt="" /></td>
-   </tr>
-   <tr>
-      <td><img src="html.jpg" alt="" /></td>
-      <td><img src="css.jpg" alt="" /></td>
-      <td><img src="react.jpg" alt="" /></td>
-      <td><img src="kafka.jpg" alt="" /></td>
-   </tr>
-   <tr>
-      <td><img src="intelij.jpg" alt="" /></td>
-      <td><img src="vscode.jpg" alt=""/></td>
-      <td><img src="figma.jpg" alt="" /></td>
-      <td><img src="notion.jpg" alt="" /></td>
-   </tr>
-</table>
+<tabs>
+    <tab title="Image">
+        <table>
+           <tr>
+              <td><img src="oracle.jpg" alt=""/></td>
+              <td><img src="mongodb.jpg" alt="" /></td>
+              <td><img src="java.jpg" alt="" /></td>
+              <td><img src="springboot.jpg" alt="" /></td>
+           </tr>
+           <tr>
+              <td><img src="html.jpg" alt="" /></td>
+              <td><img src="css.jpg" alt="" /></td>
+              <td><img src="react.jpg" alt="" /></td>
+              <td><img src="kafka.jpg" alt="" /></td>
+           </tr>
+           <tr>
+              <td><img src="intelij.jpg" alt="" /></td>
+              <td><img src="vscode.jpg" alt=""/></td>
+              <td><img src="figma.jpg" alt="" /></td>
+              <td><img src="notion.jpg" alt="" /></td>
+           </tr>
+        </table>
+    </tab>
+    <tab title="Text">
+        <list>
+            <li>DB : Oracle, MongoDB</li>
+            <li>Language : JAVA, JavaScript</li>
+            <li>Markup Language : HTML, CSS</li>
+            <li>Backend FrameWork : Spring Boot, Kafka</li>
+            <li>FrontFramework : React</li>
+            <li>Frontend Library : Sunediter, fullCalendar, jsTree</li>
+            <li>IDE : IntelliJ</li>
+            <li>OtherSoftware : DA#5, Figma</li>
+        </list>
+    </tab>
+</tabs>
 
-DB : Oracle, MongoDB <br />
-Language : JAVA, JavaScript <br />
-Markup Language : HTML, CSS <br />
-Backend FrameWork : Spring Boot, Kafka <br />
-FrontFramework : React <br />
-Frontend Library : Sunediter, fullCalendar, jsTree <br />
-IDE : IntelliJ <br />
-OtherSoftware : DA#5, Figma <br />
 
 ## 3. 참여 및 담당
 
 ### 3-1. 프로젝트 참여 인원(6명)
+
 1. 스케쥴관리(캘린더) - 유**
 2. 회원정보 - 송**
 3. 전자결재 - 주**
@@ -71,24 +80,41 @@ OtherSoftware : DA#5, Figma <br />
 <img src="DBModel.png" alt="" />
 
 ### 4-4. 캘린더 주요 기능
-1. 캘린더 표시 여부에 따른 필터링
-    1. 전사 일정
-    2. 내가 속한 팀 일정
-    3. 그 밖에 공개된 캘린더
-2. 모달을 이용한 간략한 일정 정보
-    1. 주소 등록시 카카오맵 팝업창 전환
-    2. 수정 및 삭제 가능
-3. 일정등록
-    1. 참석자 추가 가능 (직원 리스트에서 추가)
-4. 캘린더 관리
-    1. 내 캘린더
-        1. 캘린더 추가 및 수정 삭제 가능
-        2. 캘린서 표시될 순서 변경
-        3. 캘린더 공개 여부 수정
-    2. 관심 캘린더
-        1. 내가 구독하고 있는 캘린더 표시 및 삭제
-        2. 내가 공개한 캘린더를 구독하는 캘린더와 유저, 구독 승인 및 취소 기능
-        3. 공개된 캘린더 리스트 통한 구독 승인 요청
+
+<chapter title="1. 캘린더 표시 여부에 따른 필터링" collapsible="true">
+
+1. 전사 일정
+2. 내가 속한 팀 일정
+3. 그 밖에 공개된 캘린더
+
+</chapter>
+
+<chapter title="2. 모달을 이용한 간략한 일정 정보" collapsible="true">
+ 
+1. 주소 등록시 카카오맵 팝업창 전환
+2. 수정 및 삭제 가능
+
+</chapter>
+
+<chapter title="3. 일정등록" collapsible="true">
+
+1. 참석자 추가 가능 (직원 리스트에서 추가)
+
+
+</chapter>
+
+<chapter title="4. 캘린더 관리" collapsible="true">
+
+1. 내 캘린더
+   1. 캘린더 추가 및 수정 삭제 가능
+   2. 캘린서 표시될 순서 변경
+   3. 캘린더 공개 여부 수정
+2. 관심 캘린더
+   1. 내가 구독하고 있는 캘린더 표시 및 삭제
+   2. 내가 공개한 캘린더를 구독하는 캘린더와 유저, 구독 승인 및 취소 기능
+   3. 공개된 캘린더 리스트 통한 구독 승인 요청
+
+</chapter>
 
 
 ## 5. 실제 구현 화면

@@ -14,5 +14,13 @@
         <description>Created after removal of "Empty MD Topic" from Portfolio</description>
         <accepts>Empty-MD-Topic.html</accepts>
     </rule>
+    <rule id="7c4d01d8">
+        <description>Created after removal of "Tutorial" from Portfolio</description>
+        <accepts>Tutorial.html</accepts>
+    </rule>
+    <rule id="e1304e7">
+        <description>Created after removal of "Tutorial" from Portfolio</description>
+        <accepts>Tutorial.html</accepts>
+    </rule>
 
 </rules>

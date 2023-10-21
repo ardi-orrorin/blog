@@ -37,50 +37,51 @@ Other Size, Main Size (기타 사이즈, 우린에겐 메인사이즈)
 </table>
    </tab>
    <tab title="Text">
-      DB : Oracle <br />
-      Language : JAVA, JavaScript <br />
-      Markup Language : HTML, CSS <br />
-      Backend FrameWork : Spring Boot, MyBatis <br />  
-      Frontend Library : jQeury, Thyemleaf, Sunediter <br />  
-      IDE : IntelliJ, VScode, DA#5 <br />
+    <list>
+        <li>DB : Oracle</li>
+        <li>Language : JAVA, JavaScript</li>
+        <li>Markup Language : HTML, CSS</li>
+        <li>Backend FrameWork : Spring Boot, MyBatis</li>
+        <li>Frontend Library : jQeury, Thyemleaf, Sunediter</li>
+        <li>IDE : IntelliJ, VScode, DA#5</li>
+    </list>
    </tab>
 </tabs>
-
-
-
 
 ## 3. 참여 및 담당
 
 ### 3-1. 프로젝트 참여 인원(6명)
+
 1. 사용자 페이지 2명 - 허**, 홍**
 2. 판매자 페이지 2명 - 유**, 여**
 3. ADMIN 페이지 2명 - 김**, 정**
 
-
 ### 3-2. 담당 내용(판매자 영역)
 <chapter title="1. 펀딩 등록 및 수정" collapsible="true">
-<p>
-    1. 펀딩 정보 등록 <br />
-    2. 상세 정도 등록 <br />
-    3. FAQ 등록 <br />
-    4. 새소식 등록 <br />
-</p>
+
+1. 펀딩 정보 등록
+2. 상세 정도 등록
+3. FAQ 등록
+4. 새소식 등록
+
+
 </chapter>
 
 <chapter title="펀딩 관리 페이지" collapsible="true">
-<p>
-    1. 펀딩 취소 <br /> 
-    2. 펀딩 통계 <br />
-    3. 등록된 펀딩 리스트 조회 및 검색 <br />
-    4. Q/A 리스트 조회 및 답변 <br />
-</p>
+
+1. 펀딩 취소
+2. 펀딩 통계
+3. 등록된 펀딩 리스트 조회 및 검색
+4. Q/A 리스트 조회 및 답변
+
 </chapter>
+
 <chapter title="몌인 페이지 펀딩 리스트 출력" collapsible="true">
-   <p>
-      1. 카테고리별 조회 <br />
-      2. 오픈예정 조회 <br />
-      3. 오늘오픈 조회 <br />
-   </p>
+
+1. 카테고리별 조회
+2. 오픈예정 조회
+3. 오늘오픈 조회
+
 </chapter>
 
 ## 4. 프로젝트 기획

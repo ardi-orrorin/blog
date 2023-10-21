@@ -27,17 +27,24 @@
         </table>
     </tab>
     <tab title="text">
-        <p>
-            DB: MariaDB <br/>
-            Language: Kotlin, Typescript <br/>
-            Framwork : Springboot, Sass, Vue <br/>
-            IDE: IntelliJ
-        </p>
+        <list>
+            <li>DB: MariaDB</li>
+            <li>Language: Kotlin, Typescript</li>
+            <li>Framwork : Springboot, Sass, Vue</li>
+            <li>IDE: IntelliJ</li>
+        </list>
     </tab>
 </tabs>
 
+## 3. 프로젝트 기획
+
+### 3-1. 모델링
+<img src="hamonyERD.jpg" />
 
 <seealso>
+    <category ref="erdcloud">
+        <a href="https://www.erdcloud.com/d/FBcpwDQxviNr93FA4">ERD Cloud</a>
+    </category>
     <category ref="git">
         <a href="https://github.com/yoosc89/hamony">Hamony</a>
     </category>

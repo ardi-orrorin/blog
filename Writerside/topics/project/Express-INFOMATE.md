@@ -28,11 +28,11 @@ INFOMATE 프로젝트에서 Springboot 서버를 ExpressJs(NodeJS)로 마이그�
         </table>
     </tab>
     <tab title="Text">
-        <p>
-        1. Framework : nodeJs, ExpressJs, Sequelize <br />
-        2. db: Oracle <br />
-        3. Language : javascript <br />
-        </p>
+        <list>
+            <li>Framework : nodeJs, ExpressJs, Sequelize</li>
+            <li>DB: Oracle</li>
+            <li>Language : javascript</li>
+        </list>
     </tab>
 </tabs>
 

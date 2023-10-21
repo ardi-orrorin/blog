@@ -11,40 +11,37 @@
 
 ## 2. Tech Stack
 <tabs>
-<tab title="Image">
-<table>
-   <tr>
-      <td><img src="mysql.jpg" /></td>
-      <td><img src="python.jpg" /></td>
-      <td><img src="fastapi.jpg" /></td>
-   </tr>
-   <tr>
-      <td><img src="html.jpg" /></td>
-      <td><img src="css.jpg" /></td>
-      <td><img src="svetle.jpg" /></td>
-      <td><img src="nginx.jpg" /></td>
-   </tr>
-   <tr>
-      <td><img src="vscode.jpg" /></td>
-      <td><img src="docker.jpg" /></td>
-   </tr>
-</table>
-</tab>
-<tab title="Text">
-<p>
-DB : Mysql(MariaDB) <br/>
-Language : Python, javaScript <br/>  
-Makrup Language : CSS   <br/>
-Backend Framework : Fastapi   <br/>
-Front Framework : Svelte   <br/>
-IDE : Vscode   <br/>
-Platfrom Software : Docker <br/>
-</p>
-</tab>
+    <tab title="Image">
+        <table>
+           <tr>
+              <td><img src="mysql.jpg" /></td>
+              <td><img src="python.jpg" /></td>
+              <td><img src="fastapi.jpg" /></td>
+           </tr>
+           <tr>
+              <td><img src="html.jpg" /></td>
+              <td><img src="css.jpg" /></td>
+              <td><img src="svetle.jpg" /></td>
+              <td><img src="nginx.jpg" /></td>
+           </tr>
+           <tr>
+              <td><img src="vscode.jpg" /></td>
+              <td><img src="docker.jpg" /></td>
+           </tr>
+        </table>
+    </tab>
+    <tab title="Text">
+        <list>
+            <li>DB : Mysql(MariaDB)</li>
+            <li>Language : Python, javaScript</li>
+            <li>Makrup Language : CSS</li>
+            <li>Backend Framework : Fastapi</li>
+            <li>Front Framework : Svelte</li>
+            <li>IDE : Vscode</li>
+            <li>Platfrom Software : Docker</li>
+        </list>
+    </tab>
 </tabs>
-
-  
-
 
 ## 3. 구현 화면
 ### 3-1. 고객 정보 등록

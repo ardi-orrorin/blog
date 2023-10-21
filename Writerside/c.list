@@ -4,4 +4,5 @@
 <categories>
     <category id="git" name="Github Repository Link" order="1"/>
     <category id="code" name="Github Code Line Link" order="2"/>
+    <category id="erdcloud" name="ERDCloud Link" order="3"/>
 </categories>

@@ -29,12 +29,12 @@ INFOMATE 프로젝트에서 채팅와 알림 서비스를 추가로 제작한 �
 </table>
 </tab>
     <tab title="Text">
-        <p>
-            1. Framework : SpringBoot, Kafka, WebFlux <br />
-            2. db: MongoDB, Oracle <br />
-            3. WebSocket-STOMP <br />
-            4. Language : Java <br />
-        </p>
+        <list>
+            <li>Framework : SpringBoot, Kafka, WebFlux</li>
+            <li>db: MongoDB, Oracle</li>
+            <li>WebSocket-STOMP</li>
+            <li>Language : Java</li>
+        </list>
     </tab>
 </tabs>
 
