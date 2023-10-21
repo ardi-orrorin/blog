@@ -56,3 +56,10 @@
 
 ## 3. Career
 1. 2023-03 ~ 2023-09 : 하이미디어개발원(풀스택 과정) 수료
+
+
+<seealso>
+    <category ref="git">
+        <a href="https://github.com/yoosc89/DevStudy">개발 공부용</a>
+    </category>
+</seealso>

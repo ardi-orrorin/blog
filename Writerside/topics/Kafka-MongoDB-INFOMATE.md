@@ -1,4 +1,4 @@
-# Kafka&amp;MongoDB-INFOMATE
+# Kafka-MongoDB-INFOMATE
 
 
 ## 1. INTRODUCTION
@@ -28,14 +28,14 @@ INFOMATE 프로젝트에서 채팅와 알림 서비스를 추가로 제작한 �
     </tr>
 </table>
 </tab>
-<tab title="Text">
-    <p>
-        1. Framework : SpringBoot, Kafka, WebFlux <br />
-        2. db: MongoDB, Oracle <br />
-        3. WebSocket-STOMP <br />
-        4. Language : Java <br />
-    </p>
-</tab>
+    <tab title="Text">
+        <p>
+            1. Framework : SpringBoot, Kafka, WebFlux <br />
+            2. db: MongoDB, Oracle <br />
+            3. WebSocket-STOMP <br />
+            4. Language : Java <br />
+        </p>
+    </tab>
 </tabs>
 
 
@@ -64,6 +64,6 @@ INFOMATE 프로젝트에서 채팅와 알림 서비스를 추가로 제작한 �
 
 <seealso>
     <category ref="git">
-        <a href="https://github.com/yoosc89/INFOMATE_Kafka_MongoDB">BackEnd-Kafka&MongoDB</a>
+        <a href="https://github.com/yoosc89/INFOMATE_Kafka_MongoDB">BackEnd-Kafka-MongoDB</a>
     </category>
 </seealso>
