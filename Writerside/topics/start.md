@@ -1,6 +1,7 @@
 # PORTFOLIO
 
 ## 1. INDRODUCE
+백엔드 개발자에서 devOps 개발자로 성장하자
 
 ## 2. 기술 스택 & 경험
 
@@ -56,7 +57,6 @@
 
 ## 3. Career
 1. 2023-03 ~ 2023-09 : 하이미디어개발원(풀스택 과정) 수료
-
 
 <seealso>
     <category ref="git">

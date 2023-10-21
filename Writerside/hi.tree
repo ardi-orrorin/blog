@@ -11,11 +11,142 @@
         <toc-element topic="01-OSMAS.md" />
     </toc-element>
     <toc-element toc-title="Person-Project" sort-children="descending">
-
         <toc-element topic="Kafka-MongoDB-INFOMATE.md"/>
         <toc-element topic="Express-INFOMATE.md"/>
         <toc-element topic="Alttuel.md"/>
         <toc-element topic="CRM.md"/>
         <toc-element topic="Hamony.md"/>
     </toc-element>
+    <toc-element toc-title="DevStudy(이전 중)" sort-children="descending">
+        <toc-element toc-title="Language">
+            <toc-element toc-title="JAVA">
+                <toc-element toc-title="Core">
+
+                </toc-element>
+                <toc-element toc-title="Framework">
+
+                </toc-element>
+                <toc-element toc-title="Library" >
+
+                </toc-element>
+            </toc-element>
+            <toc-element toc-title="JavaScript">
+                <toc-element toc-title="Core">
+
+                </toc-element>
+                <toc-element toc-title="Framework">
+
+                </toc-element>
+                <toc-element toc-title="Library" >
+
+                </toc-element>
+            </toc-element>
+            <toc-element toc-title="Kotlin">
+                <toc-element toc-title="Core">
+
+                </toc-element>
+                <toc-element toc-title="Framework">
+
+                </toc-element>
+                <toc-element toc-title="Library" >
+
+                </toc-element>
+            </toc-element>
+            <toc-element toc-title="Python">
+                <toc-element toc-title="Core">
+
+                </toc-element>
+                <toc-element toc-title="Framework">
+
+                </toc-element>
+                <toc-element toc-title="Library" >
+
+                </toc-element>
+            </toc-element>
+            <toc-element toc-title="MarkDown">
+
+            </toc-element>
+            <toc-element toc-title="MarkUp">
+                <toc-element toc-title="CSS">
+                    <toc-element toc-title="CORE">
+
+                    </toc-element>
+                    <toc-element toc-title="SCSS">
+
+                    </toc-element>
+                </toc-element>
+                <toc-element toc-title="HTML">
+
+                </toc-element>
+            </toc-element>
+            <toc-element toc-title="ShellScript">
+
+            </toc-element>
+        </toc-element>
+        <toc-element toc-title="DB">
+            <toc-element toc-title="RDBMS">
+                <toc-element toc-title="Oracle">
+
+                </toc-element>
+                <toc-element toc-title="Mysql">
+
+                </toc-element>
+                <toc-element toc-title="PostgreSQL">
+
+                </toc-element>
+            </toc-element>
+            <toc-element toc-title="DBMS">
+                <toc-element toc-title="MongoDB">
+
+                </toc-element>
+                <toc-element toc-title="Redis">
+
+                </toc-element>
+                <toc-element toc-title="ElasticSearch">
+
+                </toc-element>
+            </toc-element>
+        </toc-element>
+        <toc-element toc-title="DevOps">
+            <toc-element toc-title="Docker">
+
+            </toc-element>
+            <toc-element toc-title="ElasticStack">
+
+            </toc-element>
+            <toc-element toc-title="Kafka">
+
+            </toc-element>
+            <toc-element toc-title="Jenkins">
+
+            </toc-element>
+            <toc-element toc-title="KJiernates">
+
+            </toc-element>
+            <toc-element toc-title="GoogleCloud">
+
+            </toc-element>
+        </toc-element>
+        <toc-element toc-title="IDE">
+            <toc-element toc-title="Eclipse">
+
+            </toc-element>
+            <toc-element toc-title="Jetbrains">
+
+            </toc-element>
+            <toc-element toc-title="VSCode">
+
+            </toc-element>
+            <toc-element toc-title="Xcode">
+
+            </toc-element>
+            <toc-element toc-title="Vim">
+
+            </toc-element>
+        </toc-element>
+        <toc-element toc-title="Other">
+
+        </toc-element>
+    </toc-element>
+
 </instance-profile>
