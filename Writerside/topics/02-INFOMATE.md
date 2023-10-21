@@ -1,4 +1,4 @@
-# 01.INFOMATE
+# 02_INFOMATE
 
 ## 1. 프로젝트 소개
 

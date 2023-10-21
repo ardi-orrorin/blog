@@ -3,4 +3,5 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/categories.dtd">
 <categories>
     <category id="git" name="Github Repository Link" order="1"/>
+    <category id="code" name="Github Code Line Link" order="2"/>
 </categories>

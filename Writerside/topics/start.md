@@ -6,55 +6,53 @@
 
 <table>
    <tr>
-      <td><img src="oracle.jpg" alt="" /></td>
-      <td><img src="mysql.jpg" alt="" /></td>
-      <td><img src="postgresql.jpg" alt="" /></td>
+      <td><img src="oracle.jpg" /></td>
+      <td><img src="mysql.jpg" /></td>
+      <td><img src="postgresql.jpg" /></td>
    </tr>
    <tr>
-      <td><img src="mongodb.jpg" alt="" /></td>
-      <td><img src="redis.jpg" alt="" /></td>
+      <td><img src="mongodb.jpg" /></td>
+      <td><img src="redis.jpg" /></td>
    </tr>
    <tr>
-      <td><img src="java.jpg" alt="" /></td>
-      <td><img src="python.jpg" alt="" /></td>
-      <td><img src="js.jpg"  alt="" /></td>
-      <td><img src="typescript.jpg" alt="" /></td>
+      <td><img src="java.jpg" /></td>
+      <td><img src="python.jpg" /></td>
+      <td><img src="js.jpg"  /></td>
+      <td><img src="typescript.jpg" /></td>
    </tr>
    <tr>
-      <td><img src="springboot.jpg" alt="" /></td>
-      <td><img src="fastapi.jpg" alt="" /></td>
-      <td><img src="mybatis.jpg" alt="" /></td>
-      <td><img src="nodejs.jpg" alt="" /></td>
+      <td><img src="springboot.jpg" /></td>
+      <td><img src="fastapi.jpg" /></td>
+      <td><img src="mybatis.jpg" /></td>
+      <td><img src="nodejs.jpg" /></td>
    </tr>
    <tr>
-      <td><img src="html.jpg" alt="" /></td>
-      <td><img src="css.jpg" alt="" /></td>
-      <td><img src="jqeury.jpg" alt="" /></td>
-      <td><img src="Thyemleaf.jpg" alt="" /></td>
+      <td><img src="html.jpg" /></td>
+      <td><img src="css.jpg" /></td>
+      <td><img src="jqeury.jpg" /></td>
+      <td><img src="Thyemleaf.jpg" /></td>
    </tr>
    <tr>
-      <td><img src="sequalize.jpg" alt="" /></td>
+      <td><img src="sequalize.jpg" /></td>
    </tr>
    <tr>
-      <td><img src="nextJs.jpg" alt="" /></td>
-      <td><img src="react.jpg" alt="" /></td>
-      <td><img src="svetle.jpg" alt="" /></td>
-      <td><img src="express.jpg" alt="" /></td>
+      <td><img src="nextJs.jpg" /></td>
+      <td><img src="react.jpg" /></td>
+      <td><img src="svetle.jpg" /></td>
+      <td><img src="express.jpg" /></td>
    </tr>
    <tr>
-      <td><img src="nginx.jpg" alt="" /></td>
-      <td><img src="kafka.jpg" alt="" /></td>
-      <td><img src="docker.jpg" alt="" /></td>
+      <td><img src="nginx.jpg" /></td>
+      <td><img src="kafka.jpg" /></td>
+      <td><img src="docker.jpg" /></td>
    </tr>
    <tr>
-      <td><img src="intelij.jpg" alt="" /></td>
-      <td><img src="vscode.jpg" alt="" /></td>
-      <td><img src="figma.jpg" alt="" /></td>
-      <td><img src="notion.jpg" alt="" /></td>
+      <td><img src="intelij.jpg" /></td>
+      <td><img src="vscode.jpg" /></td>
+      <td><img src="figma.jpg" /></td>
+      <td><img src="notion.jpg" /></td>
    </tr>
 </table>
 
-## PROJECT LIST
-1. [INFOMATE](01INFOMATE.md)
-
-
+## 3. Career
+1. 2023-03 ~ 2023-09 : 하이미디어개발원(풀스택 과정) 수료

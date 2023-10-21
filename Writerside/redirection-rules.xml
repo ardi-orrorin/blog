@@ -10,5 +10,9 @@
         <description>Redirect Fortpolio Page</description>
         <accepts>01INFOMATE.html</accepts>
     </rule>
+    <rule id="24832b08">
+        <description>Created after removal of "Empty MD Topic" from Portfolio</description>
+        <accepts>Empty-MD-Topic.html</accepts>
+    </rule>
 
 </rules>
