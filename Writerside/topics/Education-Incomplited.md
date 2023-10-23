@@ -1,40 +1,5 @@
 # Education-Incomplited
 
-교육 수료 기록
+### 교육 수료 기록
 
-<chapter title="[2303-2309] 1. React.js와 Springboot를 활용한 자바 풀스택 개발자" collapsible="true">
-
-1. 응용 SW 개발을 위한 자바프로그래밍기초
-    - 자바 기초 문법: 자료형, 배열, 컬렉션, 연산자, 제어문, 클래스와 객체, API, 제네릭, 파일입출력, 네트워크, 스레드
-    - 객체지향프로그래밍(OOP): 캡슐화, 상속, 다형성, 추상화, 객체지향 설계 5원칙 (SOLID), 디자인패턴 (Degign Pattern)
-2. 관계형 데이터베이스를 위한 SQL 및 데이터 모델링
-    - DBMS (Oracle): 기초 쿼리 (SELECT), 증급 쿼리 (조인, 서브쿼리), 관리 구문 (DML, DDL, DCL)
-    - 데이터베이스모델링: 엔터티, 정규화, ERD
-3. 영속성 프레임워크를 활용한 데이터베이스연동 응용SW개발
-    - JDBC: Connection, Statement / PreparedStatement - mybatis: CRUD, 동적 SQL, Mapper / Config
-4. 웹 표준을 적용한 Web Front 개발
-    - HTML5: Tag Element, Tag Property
-    - CSS3: 선택자, Css Style Property, Layout
-    - javascript: 기초 문법, Browser Object Model, Document Object Model - Jquery: 선택자, 메소드, Effects
-5. 스프링 프레임워크를 활용한 BackEnd 서버개발
-    - Servlet / JSP: 라이프사이클, service / parameter, request / response, forward / redirect, cookie / session, filter / listener, JSP Tag Element / 표준 액션태그, EL / JSTL
-    - SpringFramework: 스프링의 3대 특징 (IoC (DI), AOP, Portable Service), 다국어 메세 지 처리(i18n), RequestMapping / handler method, view resolver / exception handler, interceptor, spring boot, mybatis-spring - SpringSecurity(Session): session 기반 인증
-6. **[프로젝트]** 스프링부트와 마이바티스를 활용한 MVC Model2 기반 풀스택 웹 애플리 케이션 프로젝트
-    - **[A그룹]** 스프링부트와 마이바티스를 활용한 MVC Model2 기반 풀스택 클라우드 펀딩 (crowd-function) 시스템 개발
-    - **[B그룹]** 스프링부트와 마이바티스를 활용한 MVC Model2 기반 풀스택 주문, 결제(Order-Payment) 시스템 개발
-7. 스프링 부트를 활용한 RestAPI서버프로그래밍
-    - http: OSI 7 Layers, HTTP Protocol, 클라이언트, 서버, 리소스, 트랜젝션, 메세지 - SpringRestAPI: restAPI 설계 규칙, http method, 컨트롤러 요청 매핑, swagger - SpringSecurity(JWT,OAuth): 토큰 기반 인증
-8. ORM 프레임워크를 활용한 서버 애플리케이션 개발
-    - JPA: Persistence context, mapping, associations, jpql, native sql, query dsl - SpringDataJPA: JPARepository, CRUDRepository, Paging And SortRepository - QueryMethod
-9. React.js를 활용한 SPA 애플리케이션 개발
-    - javascript (ES6): ES6 추가 문법, babel, webpack, npm
-    - React.js: Component, JSX, props,states, hooks, router, redux
-10. 도커를 활용한 클라우드 서버 구축 및 배포
-    - Linux (Ubuntu): ubuntu 기본 명령어
-    - React.js: Docker Container 명령어, Docker Image 명령어, DockerFile 생성
-    - AWS: IAM, 사용자, 사용자그룹, 보안그룹, 정책, EC2, Elastic IP, S3, Cloud Front, RDS
-11. **[프로젝트]** 스프링부트 기반의 RestAPI 서버를 연동한 React.js SPA 애플리케이션 개발 및 클라우드서버 배포 프로젝트
-    - **[A그룹]** 스프링부트 기반의 RestAPI 서버를 연동한 인사관리(HR) ERP Module RestAPI 서버 개발 및 React.js SPA 애플리케이션 개발과 도커를 활용한 클라우드 배포
-    - **[B그룹]** 스프링부트 기반의 RestAPI 서버를 연동한 그룹웨어(Group Ware) RestAPI 서버 개발 및 React.js SPA 애플리케이션 개발과 도커를 활용한 클라우드 배포
-
-</chapter>
+1. [](23032309.md)
