@@ -46,10 +46,10 @@
     </step>
     <step>
         <p>접속할 Jenkins URL 주소 설정</p>
-        <img src="jenkins_jekinsUrl.jpg" alt="">
+        <img src="jenkins_jekinsUrl.jpg" alt=""/>
     </step>
     <step>
         <p>젠킨스 시작</p>
-        <img src="jenkins_jenkinsStart.jpg" alt="">
+        <img src="jenkins_jenkinsStart.jpg" alt=""/>
     </step>
 </procedure>
