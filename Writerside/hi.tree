@@ -123,6 +123,7 @@
 
             </toc-element>
             <toc-element toc-title="Jenkins">
+                <toc-element topic="jenkins_Glossary.md"/>
                 <toc-element topic="jenkins_install.md"/>
             </toc-element>
             <toc-element toc-title="KJiernates">
