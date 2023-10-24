@@ -39,13 +39,13 @@ INFOMATE 프로젝트에서 Springboot 서버를 ExpressJs(NodeJS)로 마이그�
 ## 4. Code Review
 
 ### 4-1. 기본 api router 구조
-![](middleware.jpg)
+![](middleware.jpg){thumbnail="true"}
 
 ### 4-2. JWT토큰 검증
-![](verifyToken.jpg)
+![](verifyToken.jpg){thumbnail="true"}
 
 ### 4-3. 무중단 배포를 위한 pm2 모듈 이용
-![](pm.jpg)
+![](pm.jpg){thumbnail="true"}
 
 <seealso>
     <category ref="git">

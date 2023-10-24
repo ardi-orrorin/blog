@@ -39,7 +39,7 @@
 ## 3. 프로젝트 기획
 
 ### 3-1. 모델링
-<img src="hamonyERD.jpg" />
+<img src="hamonyERD.jpg" thumbnail="true"/>
 
 <seealso>
     <category ref="erdcloud">

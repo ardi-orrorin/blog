@@ -46,15 +46,15 @@
 ## 3. 구현 화면
 ### 3-1. 고객 정보 등록
 
-![](02crm.jpg)
+![](02crm.jpg){thumbnail="true"}
 
 ### 3-2. 고객 상담 내역 조회
-![](01crm.jpg)
+![](01crm.jpg){thumbnail="true"}
 
 ### 3-3. 고객 리스트 조히
-![](03crm.jpg)
+![](03crm.jpg){thumbnail="true"}
 
-![](04crm.jpg)
+![](04crm.jpg){thumbnail="true"}
 
 
 <seealso>

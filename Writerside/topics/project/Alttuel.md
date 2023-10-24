@@ -44,10 +44,10 @@
 
 ## 3. 구현 스크린샷
 ### 3-1. 메인 화면
-![](01alttuel.jpg)
+![](01alttuel.jpg){thumbnail="true"}
 
 ### 3-2. 주요 코드(크롤링) - 비동기 크롤링
-![](02alttuel.jpg)
+![](02alttuel.jpg){thumbnail="true"}
 
 <seealso>
     <category ref="git">

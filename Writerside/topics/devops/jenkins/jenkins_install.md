@@ -50,7 +50,7 @@
     </step>
     <step>
         <p>초기 비밀번호 입력</p>
-        <img src="jenkins_initAdminPassword.jpg" alt=""/>
+        <img src="jenkins_initAdminPassword.jpg" alt="" thumbnail="true"/>
     </step>
     <step>
         <p>초기 비밀번호 확인</p>
@@ -60,22 +60,22 @@
     </step>
     <step>
         <p>플러그인 설치</p>
-        <img src="jenkins_setPlugin.jpg" alt=""/>
+        <img src="jenkins_setPlugin.jpg" alt="" thumbnail="true"/>
     </step>
     <step>
         <p>초기 세팅</p>
-        <img src="jenkins_initSetting.jpg" alt=""/>
+        <img src="jenkins_initSetting.jpg" alt="" thumbnail="true"/>
     </step>
     <step>
         <p>어드민 계정 생성</p>
-        <img src="jenkins_firstAccount.jpg" alt=""/>
+        <img src="jenkins_firstAccount.jpg" alt="" thumbnail="true"/>
     </step>
     <step>
         <p>접속할 Jenkins URL 주소 설정</p>
-        <img src="jenkins_jekinsUrl.jpg" alt=""/>
+        <img src="jenkins_jekinsUrl.jpg" alt="" thumbnail="true"/>
     </step>
     <step>
         <p>젠킨스 시작</p>
-        <img src="jenkins_jenkinsStart.jpg" alt=""/>
+        <img src="jenkins_jenkinsStart.jpg" alt="" thumbnail="true"/>
     </step>
 </procedure>

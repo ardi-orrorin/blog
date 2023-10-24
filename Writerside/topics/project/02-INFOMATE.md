@@ -66,18 +66,18 @@
 ## 4. 프로젝트 기획
 
 ### 4-1. 요구 사항 명세서 Notion (일부)
-<img src="notion01.jpg" alt="" />
+<img src="notion01.jpg" alt=""  thumbnail="true"/>
 
 ### 4-2. UX / UI - FIGMA
 
 ### 4-2-1. 스케쥴 관리(캘린더)
-<img src="fimga.jpg" alt="" />
+<img src="fimga.jpg" alt="" thumbnail="true" />
 
 ### 4-2-2. 전체 내용
-<img src="figma_full.jpg" alt="" />
+<img src="figma_full.jpg" alt="" thumbnail="true" />
 
 ### 4-3. DB 모델링
-<img src="DBModel.png" alt="" />
+<img src="DBModel.png" alt="" thumbnail="true" />
 
 ### 4-4. 캘린더 주요 기능
 
@@ -119,39 +119,39 @@
 
 ## 5. 실제 구현 화면
 
-<img src="cal9.jpg" alt="" />
+<img src="cal9.jpg" alt=""  thumbnail="true"/>
 
-<img src="cal1.jpg" alt="" />
+<img src="cal1.jpg" alt=""  thumbnail="true"/>
 
-<img src="cal2.jpg" alt="" />
+<img src="cal2.jpg" alt=""  thumbnail="true"/>
 
-<img src="cal3.jpg" alt="" />
+<img src="cal3.jpg" alt=""  thumbnail="true"/>
 
-<img src="cal4.jpg" alt="" />
+<img src="cal4.jpg" alt="" thumbnail="true" />
 
-<img src="cal5.jpg" alt="" />
+<img src="cal5.jpg" alt="" thumbnail="true" />
 
-<img src="cal6.jpg" alt="" />
+<img src="cal6.jpg" alt="" thumbnail="true" />
 
-<img src="cal7.jpg" alt="" />
+<img src="cal7.jpg" alt="" thumbnail="true" />
 
-<img src="cal8.jpg" alt="" />
+<img src="cal8.jpg" alt="" thumbnail="true" />
 
 ## 6. 인상깊은 혹은 주요 코드들
 
 ### 6-1. SpringBoot
-<img src="boot01.jpg" alt="" />
+<img src="boot01.jpg" alt="" thumbnail="true" />
 
-<img src="boot02.jpg" alt="" />
+<img src="boot02.jpg" alt="" thumbnail="true" />
 
-<img src="boot03.jpg" alt="" />
+<img src="boot03.jpg" alt="" thumbnail="true" />
 
 ### 6-2. Front - React
-<img src="react01.jpg" alt="" />
+<img src="react01.jpg" alt="" thumbnail="true" />
 
-<img src="react02.jpg" alt="" />
+<img src="react02.jpg" alt="" thumbnail="true" />
 
-<img src="react03.jpg" alt="" />
+<img src="react03.jpg" alt="" thumbnail="true" />
 
 ## 7. 마무리
 <seealso style="cards">
