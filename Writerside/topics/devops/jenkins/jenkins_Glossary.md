@@ -17,7 +17,7 @@
 <step>
 
 **[Agent]\(에이전트)** 구버전에서 슬레이브와 같다.  
-마스터에 의해 관리되고 필요에 의해 할당되어 잡을 수행을 담당 노드에서에서 실행된다.
+마스터에 의해 관리되고 필요에 의해 할당되어 잡을 수행을 담당 ***노드*** 에서에서 실행된다.
 </step>
 
 <step>
@@ -33,3 +33,22 @@
 [//]: # (</step>)
 </procedure>
 
+<procedure title="DSL" id="dsl" style="choices">
+<step>
+<p>
+DSL : Domain-Specific Language 정의 <br/>
+파이프라인 생성을 위해 사용하는 프로그래밍 언어
+</p>
+</step>
+<step>
+    <p>스크립트 구조</p>
+    <code-block lang="groovy">
+        node ('worker1') {
+            stage('Source') { // 화면 표시 목적
+                // 깃 저장소에서 코드 가져오기
+                git 'https://github.com/~~~/~~~' 
+            }
+        }
+    </code-block>
+</step>
+</procedure>

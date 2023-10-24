@@ -7,12 +7,12 @@
         <p>터미널(terminal) 및 명령프롬프트(cmd) 실행</p>
     </step>
     <step>
-        <code-block>
+        <code-block lang="shell">
         docker run -d --name jenkins --restart=on-failure \
         -p 8080:8080 \ 
         -v /var/jinks_home:/var/jenkins_home \
         -v /var/run/docker.sock:/var/run/docker.sock \
-        -e TZ=Asia/Seoul \
+        -e TZ=Asia/Seoul \ 
         -u root jenkins/jenkins
         </code-block>
         <tabs>
