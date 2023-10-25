@@ -129,6 +129,10 @@
                 <toc-element topic="jenkins_Glossary.md"/>
                 <toc-element topic="jenkins_install.md"/>
                 <toc-element topic="jenkins_TutorialProjectBuild.md"/>
+                <toc-element toc-title="99. Plugins">
+
+                    <toc-element topic="jenkins_nodejs.md"/>
+                </toc-element>
             </toc-element>
             <toc-element toc-title="KJiernates">
 
