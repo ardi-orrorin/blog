@@ -59,9 +59,8 @@
 </procedure>
 
 <procedure title="Polling Test">
-
-<step>
-<p>main 브런치 commit 진행</p>
-<img src="jenkins_test.jpg" alt="" thumbnail="true" />
-</step>
+    <step>
+        <p>main 브런치 commit 진행</p>
+        <img src="jenkins_test.jpg" alt="" thumbnail="true" />
+    </step>
 </procedure>
