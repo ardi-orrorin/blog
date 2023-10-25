@@ -7,7 +7,7 @@
         <p>Jenkins관리 > Plugins >  Available plugins</p>
     </step>
     <step>
-        <img src="jenkins_nodeplugin.jpg" alt=""/>
+        <img src="jenkins_nodeplugin.jpg" alt="" thumbnail="true"/>
     </step>
     <step>
         <p>NodeJS install</p>
@@ -22,7 +22,7 @@
         <p>Add nodeJS > name &amp; version 선택 후 저장 </p>
     </step>
     <step>
-        <img src="jenkins_addnode.jpg" alt=""/>
+        <img src="jenkins_addnode.jpg" alt="" thumbnail="true"/>
     </step>
 </procedure>
 
@@ -33,10 +33,10 @@
     </step>
     <step>
         <p>Node &amp; npm bin/folder to PATH 체크</p>
-        <img src="jenkins_nodebuildenv.jpg" alt="" />
+        <img src="jenkins_nodebuildenv.jpg" alt=""  thumbnail="true"/>
     </step>
     <step>
         <p>npm 명령어 스크립트 작성</p>
-        <img src="jenkins_nodebuildstep.jpg" alt="" />
+        <img src="jenkins_nodebuildstep.jpg" alt="" thumbnail="true" />
     </step>
 </procedure>
