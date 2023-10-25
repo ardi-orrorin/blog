@@ -49,7 +49,6 @@
             <toc-element toc-title="Kotlin">
                 <toc-element toc-title="Core" sort-children="ascending">
                     <toc-element topic="kotlin_Tutorial.md"/>
-
                     <toc-element topic="kotlin_Variables.md"/>
                     <toc-element topic="03-DataTypes.md"/>
                     <toc-element topic="kotlin_Conditions.md"/>
@@ -58,7 +57,7 @@
                     <toc-element topic="kotlin_ForLoop.md"/>
                     <toc-element topic="kotlin_Funtions.md"/>
                     <toc-element topic="kotlin_classes-Objects.md"/>
-                    <toc-element toc-title="10. Scope&Functions" sort-children="ascending" >
+                    <toc-element toc-title="10. Scope&amp;Functions" sort-children="ascending" >
                         <toc-element topic="kotlin_scope_tutorial.md"/>
                         <toc-element topic="kotlin_scope_let.md"/>
                         <toc-element topic="kotlin_scope_with.md"/>
@@ -68,7 +67,6 @@
                         <toc-element topic="kotlin_scope_Take.md"/>
                     </toc-element>
                     <toc-element topic="kotlin_Optional.md"/>
-
                 </toc-element>
                 <toc-element toc-title="Framework">
 

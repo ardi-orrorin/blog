@@ -54,7 +54,7 @@
 ### 3-3. 고객 리스트 조히
 ![](03crm.jpg){thumbnail="true"}
 
-![](04crm.jpg){thumbnail="true"}w
+![](04crm.jpg){thumbnail="true"}
 
 
 <seealso>
