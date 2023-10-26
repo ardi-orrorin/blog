@@ -40,7 +40,16 @@
 
                 </toc-element>
                 <toc-element toc-title="Framework">
+                    <toc-element toc-title="VueJS">
 
+                        <toc-element topic="vuejs_List-Rendering.md"/>
+                        <toc-element topic="vuejs_conditional-Rendering.md"/>
+                        <toc-element topic="vuejs_Class-Style.md"/>
+                        <toc-element topic="vuejs_Computed-Properties.md"/>
+                        <toc-element topic="vuejs_ReactivityFundamentals.md"/>
+                        <toc-element topic="vuejs_templateSynytax.md"/>
+                        <toc-element topic="vuejs_Tutorial.md"/>
+                    </toc-element>
                 </toc-element>
                 <toc-element toc-title="Library" >
 

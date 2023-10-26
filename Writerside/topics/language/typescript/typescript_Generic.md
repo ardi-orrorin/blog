@@ -1,5 +1,7 @@
 # 06. Generic
 
+<show-structure for="procedure" />
+
 <procedure title="Generic">
 <code-block src="/Language/typescript/Core/07_generic/01_generic.ts" lang="typescript"/>
 </procedure>
