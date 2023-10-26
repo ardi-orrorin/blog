@@ -6,9 +6,7 @@
     <step>
         <code-block lang="bash">
         npm i 명령어
-        <br />
         // 예제 expresJs 설치  
-        <br />
         npm i express
         </code-block>
     </step>
