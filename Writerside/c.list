@@ -5,4 +5,5 @@
     <category id="git" name="Github Repository Link" order="1"/>
     <category id="code" name="Github Code Line Link" order="2"/>
     <category id="erdcloud" name="ERDCloud Link" order="3"/>
+    <category id="ref" name="Reference Link" order="4"/>
 </categories>
