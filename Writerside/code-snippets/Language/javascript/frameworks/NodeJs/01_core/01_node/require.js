@@ -1,3 +1,5 @@
+//require.js
+
 // const {odd, even} = require('./CommonJs')  // 최상단, 최하단에 있을 필요가 없다.
 const {odd, even} = require('./exports');
 const check = require('./func');

@@ -1,3 +1,5 @@
+// func.js
+
 const { odd, even} = require('./CommonJs');
 
 const check = num => {
