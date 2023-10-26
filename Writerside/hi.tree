@@ -70,6 +70,12 @@
 
                         </toc-element>
                     </toc-element>
+                    <toc-element toc-title="ReactJs">
+
+                    </toc-element>
+                    <toc-element toc-title="SvelteJS">
+
+                    </toc-element>
                     <toc-element toc-title="VueJS" sort-children="ascending">
                         <toc-element topic="vuejs_Tutorial.md"/>
                         <toc-element topic="vuejs_templateSynytax.md"/>
@@ -152,8 +158,13 @@
                     <toc-element toc-title="CORE">
 
                     </toc-element>
-                    <toc-element toc-title="SCSS">
-
+                    <toc-element toc-title="SCSS" sort-children="ascending">
+                        <toc-element topic="scss_Tutorial.md"/>
+                        <toc-element topic="scss_Nesting.md"/>
+                        <toc-element topic="scss_Modules.md"/>
+                        <toc-element topic="scss_Mixins.md"/>
+                        <toc-element topic="scss_Extends.md"/>
+                        <toc-element topic="scss_Operators.md"/>
                     </toc-element>
                 </toc-element>
                 <toc-element toc-title="HTML">
