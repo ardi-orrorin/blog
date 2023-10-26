@@ -1,4 +1,4 @@
-# 02. templateSynytax
+# 02. TemplateSynytax
 
 <show-structure for="procedure" />
 

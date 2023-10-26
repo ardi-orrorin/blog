@@ -77,9 +77,9 @@
                 <toc-element toc-title="Core" sort-children="ascending">
                     <toc-element topic="kotlin_Tutorial.md"/>
                     <toc-element topic="kotlin_Variables.md"/>
-                    <toc-element topic="03-DataTypes.md"/>
+                    <toc-element topic="kotlin_DataTypes.md"/>
                     <toc-element topic="kotlin_Conditions.md"/>
-                    <toc-element topic="05-When.md"/>
+                    <toc-element topic="kotlin_When.md"/>
                     <toc-element topic="kotlin_Arrays.md"/>
                     <toc-element topic="kotlin_ForLoop.md"/>
                     <toc-element topic="kotlin_Funtions.md"/>
