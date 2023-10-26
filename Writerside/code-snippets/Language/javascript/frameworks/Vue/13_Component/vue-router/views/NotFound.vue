@@ -1,3 +1,5 @@
+// /views/Notfound.vue
+
 <script setup>
     const props = defineProps(['pathMatch'])
     console.log(props.pathMatch.length);

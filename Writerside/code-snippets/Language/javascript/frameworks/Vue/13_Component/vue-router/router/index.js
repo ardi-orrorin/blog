@@ -1,3 +1,4 @@
+// /router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
 import Menu from '../views/Menu.vue';
 import NotFound from '../views/NotFound.vue'

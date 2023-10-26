@@ -41,6 +41,7 @@
                 </toc-element>
                 <toc-element toc-title="Framework">
                     <toc-element toc-title="VueJS" sort-children="ascending">
+                        <toc-element topic="vuejs_Router.md"/>
                         <toc-element topic="vuejs_Tutorial.md"/>
                         <toc-element topic="vuejs_templateSynytax.md"/>
                         <toc-element topic="vuejs_ReactivityFundamentals.md"/>

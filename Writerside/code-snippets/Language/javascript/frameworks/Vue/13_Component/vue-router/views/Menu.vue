@@ -1,9 +1,10 @@
+// /views/Menu.vue
 <script setup>
     
 </script>
 
 <template>
-    <h1>About</h1>
+    <h1>Menu</h1>
 </template>
 
 <style lang="scss" scoped>
