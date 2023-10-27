@@ -87,60 +87,60 @@ Other Size, Main Size (기타 사이즈, 우린에겐 메인사이즈)
 ## 4. 프로젝트 기획
 
 ### 4-1. 요구 사항 멩세서 Notion (일부)
-![](reSpecification.jpg){thumbnail="true"}
+![](osmas_reSpecification.jpg){thumbnail="true"}
 
 
 ### 4-2. 회의록 -Notion (일부)
-![](proceedings.jpg){thumbnail="true"}
+![](osmas_proceedings.jpg){thumbnail="true"}
 
 ### 4-3. 프론트 스케치 - FIGMA
 
 ### 4-3-1. 판매자 파트
-![](my_fimga.jpg){thumbnail="true"}
+![](osmas_my_fimga.jpg){thumbnail="true"}
 
 
 ### 4-3-2. 전체 내용
 
-![](figma_full.jpg){thumbnail="true"}
+![](osmas_figma_full.jpg){thumbnail="true"}
 
 ### 4-4. DB 모델링
-![](DB.jpg){thumbnail="true"}
+![](osmas_DB.jpg){thumbnail="true"}
 
 ## 5. 구현 화면
 
 ### 5-1. 판매 등록
-![](01expressinfomate.jpg){thumbnail="true"}
+![](osmas_01expressinfomate.jpg){thumbnail="true"}
 
 ### 5-2. 판매 관리 페이지
-![](02.jpg){thumbnail="true"}
+![](osmas_02.jpg){thumbnail="true"}
 
 ## 6. 인상깊은 혹은 주요 코드들
 
 ### 6-1. SQL 프로젝트 조회 쿼리문
-![](code3.jpg){thumbnail="true"}
+![](osmas_code3.jpg){thumbnail="true"}
 
 ### 6-2 Controller
-![](code1.jpg){thumbnail="true"}
+![](osmas_code1.jpg){thumbnail="true"}
 
-![](code2.jpg){thumbnail="true"}
+![](osmas_code2.jpg){thumbnail="true"}
 
 ### 6-3 Front - Javascript
-![](code04.jpg){thumbnail="true"}
+![](osmas_code04.jpg){thumbnail="true"}
 
 ### 6-4 프로젝트 삭제 쿼리문
-![](code06.jpg){thumbnail="true"}
+![](osmas_code06.jpg){thumbnail="true"}
 
 ### 6-5 Controller
-![](code05.jpg){thumbnail="true"}
+![](osmas_code05.jpg){thumbnail="true"}
 
 
 ### 6-6 프로젝트 상품 등록 쿼리문
-![](code07.jpg){thumbnail="true"}
+![](osmas_code07.jpg){thumbnail="true"}
 
 ### 6-7 Controller
-![](code08.jpg){thumbnail="true"}
+![](osmas_code08.jpg){thumbnail="true"}
 
-![](code09.jpg){thumbnail="true"}
+![](osmas_code09.jpg){thumbnail="true"}
 
 
 <seealso>
