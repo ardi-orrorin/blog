@@ -7,12 +7,12 @@
 <p>도커 파일은 확장자가 따로 없고 Dockerfile로 명명한다.</p>
 </procedure>
 
-<procedure title="FROM" style="choices">
+<procedure title="FROM">
 <p>도커의 이미지는 다른 이미지에서 시작한다.</p>
 <p>생성할 도커의 이미지의 베이스가 될 이미지를 지정한다.</p>
 </procedure>
 
-<procedure title="ENV" style="choices">
+<procedure title="ENV">
 <p>환경 변수 값을 지정하기 위한 인스트럭션</p>
 </procedure>
 
