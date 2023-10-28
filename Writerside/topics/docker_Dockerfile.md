@@ -32,19 +32,14 @@
 <code-block lang="docker">
 FROM tomcat/latest 
 // 톰캣 이미지를 기반으로 생성
-
 ENV TARGET="env_test"
 // 환경변수의 TARGET의 값으로 env_test으로 대체
-
 WORKER /test
 // 작업 폴더를 test으로 생성하고 기본으로 함
-
 COPY app.jar .
 // 로컬의 app.jar 파일을 작업폴더 /test으로 복사
-
 CMD ["java", "-jar", "app.jar"]
 // 컨테이터 실행시 실할할 명령어 'end-point'
-
 </code-block>
 </procedure>
 
