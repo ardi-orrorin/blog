@@ -1,0 +1,81 @@
+version: '3.7'
+
+services:
+
+  fastapi-8000:
+    image: 192.168.0.4:5000/web/fastapi:v1
+    ports:
+      - "8000:8000"
+    networks:
+      app-net:
+        aliases:
+          - fastapi
+    secrets:
+      - source : pogresql-connetion
+        target : /app/fastapi/sql_info.json
+    #healthcheck:
+      #test: ["cmd", "curl","http://localhost:8000/api/check"]
+      #interval: 1m
+      #timeout: 10s
+      #retries: 3
+      #start_period: 30s
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 20000
+        hard: 40000
+    deploy:
+      mode: global
+      #mode: replicated
+      #replicas : 4
+      #placement:
+      # constraints: [node.role != manager]
+      #endpoint_mode: dnsrr
+      #resources:
+      #  limits:
+      #    cpus: "0.25"
+      update_config:
+        parallelism: 1
+        monitor: 60s
+        order: start-first
+        failure_action: rollback
+      rollback_config:
+        parallelism : 1
+        monitor : 0s
+        failure_action : continue
+        order : start-first
+
+  svelte:
+      image: 192.168.0.4:5000/web/svelte:v1
+      ports:
+        - "8080:80"
+      networks:
+        app-net:
+          aliases:
+            - svelte
+      depends_on:
+        - fastapi-8000
+       # - fastapi-8001
+      deploy:
+        mode: global
+        #mode: replicated
+        #replicas : 2
+        #placement:
+        #  constraints: [node.role != manager]
+        #endpoint_mode: dnsrr
+      ulimits:
+        nproc: 65535
+        nofile:
+          soft: 20000
+          hard: 40000
+
+
+networks:
+  app-net:
+    driver: overlay
+    attachable: true
+    external: true
+
+secrets:
+  pogresql-connetion:
+    file: ./sql_info.json

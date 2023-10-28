@@ -22,5 +22,9 @@
         <description>Created after removal of "Tutorial" from Portfolio</description>
         <accepts>Tutorial.html</accepts>
     </rule>
+    <rule id="53c8dc49">
+        <description>Created after removal of "00. CLI" from Portfolio</description>
+        <accepts>docker_CLI.html</accepts>
+    </rule>
 
 </rules>

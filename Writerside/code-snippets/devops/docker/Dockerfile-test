@@ -1,0 +1,20 @@
+FROM python:latest
+
+ENV SQL='postgresql'
+
+WORKDIR /app/fastapi/
+
+COPY ./fastapi/ /app/fastapi/
+COPY ./piplist.txt /app/fastapi/
+
+RUN apt update
+RUN apt install -y python3-certbot-nginx
+#RUN apt-get install procps
+
+RUN pip install -r piplist.txt
+
+HEALTHCHECK --interval=5s --timeout=30s --start-period=5s --retries=3 CMD curl -f http://localhost:8000/api/check || exit 1
+
+#cmd sysctl kern.ipc.somaxconn=50000
+CMD gunicorn --bind 0.0.0.0:8000 main:app --worker-class uvicorn.workers.UvicornWorker
+#CMD uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
