@@ -8,7 +8,6 @@
 <code-block lang="sql">
 -- 기본 구조
 SELECT 열 FROM 테이블명
-
 -- 조건에 맞는 행 조회
 SELECT COLUMN FROM TABLE WHERE COLUMN CONDITION VALUE
 </code-block>
@@ -34,4 +33,12 @@ SELECT COLUMN FROM TABLE WHERE COLUMN CONDITION VALUE
 
 <procedure title="중복제거(DISTINCT)" id="distinct">
     <code-block src="/Language/dbms/sql/oracle_Select.sql" include-lines="57-62" lang="sql"/>
+</procedure>
+
+<procedure title="DUAL TABLE" id="dual">
+<p>dual 테이블 dummy 열로 구성되며 , 1개의 행을 가지고 있다.</p>
+<p>이터럴 조회,행 복제, 현재 sequnece 조회 등 다양한 용도로 사용된다.</p>
+<code-block lang="sql">
+SELECT * FROM DUAL
+</code-block>
 </procedure>
