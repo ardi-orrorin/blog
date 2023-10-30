@@ -1,3 +1,3 @@
-#04.  SingleRow-Date
+#04. SingleRow-Date
 
 Start typing here...

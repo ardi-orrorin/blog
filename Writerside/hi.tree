@@ -201,6 +201,19 @@
                                 <toc-element topic="sql_SingleRow-Date.md"/>
                             </toc-element>
                         </toc-element>
+                        <toc-element toc-title="02. DML">
+
+                        </toc-element>
+                        <toc-element toc-title="03. DDL">
+
+                        </toc-element>
+                        <toc-element toc-title="04. TCS">
+
+                        </toc-element>
+
+                        <toc-element toc-title="05. DCL">
+
+                        </toc-element>
                     </toc-element>
                 </toc-element>
 
