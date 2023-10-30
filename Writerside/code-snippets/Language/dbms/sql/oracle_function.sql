@@ -439,7 +439,7 @@ SELECT
 WHERE HIRE_DATE < TO_DATE(20000101,'RRRRMMDDD'); 
 
 -- TO_NUMBER(문자데이터,[포맷]) : 문자데이터를 숫자로 리턴
-SELECT TO_NUMBER('123456789')  FROM dual;
+SELECT TO_NUMBER('123456789') FROM DUAL;
 
 -- 자동형변환
 SELECT '123'+'456' FROM dual;
@@ -486,11 +486,10 @@ WHERE EMP_ID = TO_CHAR(201);
 -- NULL처리 함수
 -- NVL(컬럼명, 컬럼값이 NULL일때 바꿀값)
 
-SELECT 
-	EMP_NAME 
-	, BONUS 
-	,NVL(BONUS,0)
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMP_NAME
+	 , BONUS
+	 , NVL(BONUS,0)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 
 -- NVL2(컬럼명, 바꿀값1, 바꿀값2)
@@ -499,23 +498,20 @@ FROM "C##EMPLOYEE".EMPLOYEE;
 
 -- 직원정보에서 보너스포인트가 NULL인 직원은 0.5로
 -- 보너스 포인트가 NULL이 아닌 경우 0.7로 변경하여 조회
-
-SELECT 
-	EMP_NAME 
-	, BONUS 
-	,NVL2(BONUS,0.7,0.5)
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMP_NAME
+	 , BONUS
+	 , NVL2(BONUS,0.7,0.5)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 -- 선택함수
 -- 여러 가지 경우에 선택할 수 있는 기능을 제공한다.
 -- DECODE(계산식 | 컬림명, 조건값1, 선택값1, 조건값2, 선택값2,,,,)
 
-SELECT 
-	EMP_ID 
-	, EMP_NAME 
-	, EMP_NO
-	, DECODE(SUBSTR(EMP_NO ,8,1),'1','남','2','여','사람아님') AS 성별  
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMP_ID
+	 , EMP_NAME
+	 , EMP_NO
+	 , DECODE(SUBSTR(EMP_NO ,8,1),'1','남','2','여','사람아님') AS 성별
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 
 -- 마지막 인자로 조건값 없이 선택값을 작성하면
@@ -533,18 +529,15 @@ FROM "C##EMPLOYEE".EMPLOYEE;
 -- 직급코드가 j6인 직원은 급여의 15%를 인상하고,
 -- 직급코드가 j5인 직원은 급여의 20%를 인상하고,
 -- 그 외 직급의 직원은 5%만 인상한다.
-
--- 직원 테이블에서 사원명, 직급콛, 급여, 인상급여(위의 조건)을 조회하세요.
-
-SELECT 
-	EMP_NAME 
-	, JOB_CODE
-	, SALARY 
-	, DECODE(JOB_CODE,'J7',SALARY * 1.1
-					 ,'J6',SALARY * 1.15
-					 ,'J5',SALARY * 1.2
-					 ,SALARY * 1.05) AS 인상급여
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMP_NAME
+	 , JOB_CODE
+	 , SALARY
+	 , DECODE(JOB_CODE,'J7',SALARY * 1.1
+	 				  ,'J6',SALARY * 1.15
+ 					  ,'J5',SALARY * 1.2
+					  ,SALARY * 1.05
+             ) AS 인상급여
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 
 -- CASE
@@ -553,17 +546,16 @@ FROM "C##EMPLOYEE".EMPLOYEE;
 --   ELSE 결과
 -- END
 
-SELECT 
-	EMP_NAME 
-	, JOB_CODE
-	, SALARY 
-	, CASE 
-		WHEN JOB_CODE = 'J7' THEN SALARY * 1.1
-		WHEN JOB_CODE = 'J6' THEN SALARY * 1.15
-		WHEN JOB_CODE = 'J5' THEN SALARY * 1.20
-		ELSE SALARY * 1.05
-	END AS 인상급여
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMP_NAME
+	 , JOB_CODE
+	 , SALARY
+	 , CASE
+	 	 WHEN JOB_CODE = 'J7' THEN SALARY * 1.1
+		 WHEN JOB_CODE = 'J6' THEN SALARY * 1.15
+		 WHEN JOB_CODE = 'J5' THEN SALARY * 1.20
+		 ELSE SALARY * 1.05
+	   END AS 인상급여
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 
 -- 사버, 사원명, 급여를 EMPLOYEE 테이블에서 조회하고,

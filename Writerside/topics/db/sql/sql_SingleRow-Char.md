@@ -106,3 +106,47 @@
 </step>
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="201-202" lang="sql"/>
 </procedure>
+
+<procedure title="TO_CHAR" id="toChar" style="choices">
+<step>
+    <p>TO_CHAR(날짜 | 숫자, 포맷)</p>
+</step>
+<step>
+    <p> 날짜 및 숫자를 문자형 데이터로 변환 포맷형식 지정</p>
+</step>
+<step>
+    <p>RR과 YY의 차이</p>
+    <p>RR은 두 자리 년도를 네자리로 바꿀 때</p>
+    <p>바꿀 년도가 50면 미만이면 2000년 적용</p>
+    <p>바꿀 년도가 50면 이상이면 1900년 적용</p>
+    <p>YY는 현재 2000년이 적용</p>
+</step>
+    <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="326-332" lang="sql"/>
+    <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="343-348" lang="sql"/>
+    <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="379-380" lang="sql"/>
+    <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="382-383" lang="sql"/>
+</procedure>
+
+<procedure title="TO_NUMBERR" id="toNumber" style="choices">
+<step> 
+    <p>TO_NUMBER('문자열', 포맷)</p>
+</step>
+<step> 
+    <p>문자열을 숫자로 변환</p>
+</step>
+    <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="442" lang="sql"/>
+</procedure>
+
+<procedure title="NULL, NVL, NVL2" id="nvl" style="choices">
+<step> 
+    <p>NULL : "" 와 같은 빈 문자열을 의미</p>
+</step>
+<step> 
+    <p>NVL(col, expr) : col의 값이 null일 경우 expr 값으로 대체</p>
+</step>
+<step> 
+    <p>NVL2(col, expr1, expr2) : col의 값이 있으면 expr1, null이면 expr2로 변경</p>
+</step>
+    <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="499-504" lang="sql"/>
+</procedure>
+

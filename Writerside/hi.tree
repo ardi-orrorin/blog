@@ -195,10 +195,12 @@
                             <toc-element topic="sql_Select-Where.md">
                             </toc-element>
                             <toc-element topic="sql_Function.md">
+                                <toc-element topic="sql_By.md"/>
                                 <toc-element topic="sql_Group.md"/>
                                 <toc-element topic="sql_SingleRow-Char.md"/>
                                 <toc-element topic="sql_SingleRow-Number.md"/>
                                 <toc-element topic="sql_SingleRow-Date.md"/>
+                                <toc-element topic="sql_Siglerow-Condition.md"/>
                             </toc-element>
                         </toc-element>
                         <toc-element toc-title="02. DML">
@@ -298,6 +300,19 @@
         </toc-element>
         <toc-element toc-title="Other">
 
+        </toc-element>
+        <toc-element toc-title="OS">
+            <toc-element toc-title="Linux">
+
+                <toc-element topic="linux_FileSystem.md"/>
+            </toc-element>
+            <toc-element toc-title="Windows">
+
+            </toc-element>
+
+            <toc-element toc-title="MacOS">
+
+            </toc-element>
         </toc-element>
     </toc-element>
 
