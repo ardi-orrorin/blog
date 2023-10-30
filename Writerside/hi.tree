@@ -185,8 +185,18 @@
         </toc-element>
         <toc-element toc-title="DB">
             <toc-element toc-title="RDBMS">
+                <toc-element toc-title="Concept">
+
+                </toc-element>
+                <toc-element toc-title="Query">
+                    <toc-element topic="sql_Select-Where.md"/>
+                    <toc-element topic="sql_Glossary.md"/>
+                    <toc-element topic="sql_Select.md"/>
+                </toc-element>
                 <toc-element toc-title="Oracle">
 
+                    <toc-element topic="00-Concept.md"/>
+                    <toc-element topic="oracle_Datatypes.md"/>
                 </toc-element>
                 <toc-element toc-title="Mysql">
 
