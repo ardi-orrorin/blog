@@ -1,4 +1,4 @@
-# 02. Select-Where
+# 01. Select-Where
 
 테이블 조회시 조건에 맞는 행만 표시하는 조건 쿼리문
 

@@ -191,13 +191,15 @@
                     </toc-element>
                     <toc-element toc-title="02. Query" sort-children="ascending">
                         <toc-element topic="sql_Glossary.md"/>
-                        <toc-element topic="sql_Select.md"/>
-                        <toc-element topic="sql_Select-Where.md"/>
-                        <toc-element topic="sql_Function.md">
-                            <toc-element topic="sql_SingleRow-Date.md"/>
-                            <toc-element topic="sql_SingleRow-Number.md"/>
-                            <toc-element topic="sql_SingleRow-Char.md"/>
-                            <toc-element topic="sql_Group.md"/>
+                        <toc-element topic="sql_Select.md">
+                            <toc-element topic="sql_Select-Where.md">
+                            </toc-element>
+                            <toc-element topic="sql_Function.md">
+                                <toc-element topic="sql_Group.md"/>
+                                <toc-element topic="sql_SingleRow-Char.md"/>
+                                <toc-element topic="sql_SingleRow-Number.md"/>
+                                <toc-element topic="sql_SingleRow-Date.md"/>
+                            </toc-element>
                         </toc-element>
                     </toc-element>
                 </toc-element>
