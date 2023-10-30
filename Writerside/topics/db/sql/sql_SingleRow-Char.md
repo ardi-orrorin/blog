@@ -2,7 +2,7 @@
 
 <show-structure for="procedure" />
 
-<procedure title="LENGTH, LENGTHB" id="length">
+<procedure title="LENGTH, LENGTHB" id="length" style="choices">
     <step>
         <p>char의 길이를 반환한다.</p>
     </step>
@@ -12,7 +12,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="57-63" lang="sql"/>
 </procedure>
 
-<procedure title="INSTR" id="instr">
+<procedure title="INSTR" id="instr" style="choices">
     <step>
         <p>INSTR('문자열' | '컬럼명' | '문자', 찾을 위치의 시작값, [빈도])</p>
     </step>
@@ -25,7 +25,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="66-74" lang="sql"/>
 </procedure>
 
-<procedure title="LPAD, RPAD" id="pad">
+<procedure title="LPAD, RPAD" id="pad" style="choices">
     <step>
         <p>LPAD('문자열',expr1, expr2) expr1 총 길이, expr2 채울 문자열 </p>
     </step>
@@ -38,7 +38,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="77-87" lang="sql"/>
 </procedure>
 
-<procedure title="TRIM, RTRIM, LTRIM" id="trim">
+<procedure title="TRIM, RTRIM, LTRIM" id="trim" style="choices">
     <step>
         <p>LTRIM('문자열',expr1), RTRIM('문자열',expr1) </p>
     </step>
@@ -54,7 +54,7 @@
 </procedure>
 
 
-<procedure title="SUBSTR, SUBSTRB" id="substr">
+<procedure title="SUBSTR, SUBSTRB" id="substr" style="choices">
 <step>
     <p>SUBSTR('문자열', start, end)</p>
 </step>
@@ -71,7 +71,7 @@
 </procedure>
 
 
-<procedure title="LOWER, UPPER, INITCAP" id="lower">
+<procedure title="LOWER, UPPER, INITCAP" id="lower" style="choices">
     <step>
         <p>LOWER('문자열'), UPPER('문자열') </p>
     </step>
@@ -87,7 +87,7 @@
 </procedure>
 
 
-<procedure title="CONCAT" id="concat">
+<procedure title="CONCAT" id="concat" style="choices">
 <step>
     <p>CONCAT('문자열1','문자열2')</p>
 </step>
@@ -97,7 +97,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="195-197" lang="sql"/>
 </procedure>
 
-<procedure title="REPLACE" id="replace">
+<procedure title="REPLACE" id="replace" style="choices">
 <step>
     <p>REPLACE('문자열',old, new)</p>
 </step>

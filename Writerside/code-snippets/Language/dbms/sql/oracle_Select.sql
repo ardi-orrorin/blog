@@ -219,7 +219,7 @@ SELECT EMP_ID
 	 , EMP_NAME
 	 , EMP_NO
   FROM "C##EMPLOYEE".EMPLOYEE
-  WHERE EMP_NO  LIKE '_______@_%' ESCAPE '@';
+ WHERE EMP_NO  LIKE '_______@_%' ESCAPE '@';
 
 
 

@@ -2,7 +2,7 @@
 
 <show-structure for="procedure" />
 
-<procedure title="ABS 절대값" id="abs">
+<procedure title="ABS 절대값" id="abs" style="choices">
 <step>
     <p>ABS(num)</p>
 </step>
@@ -12,7 +12,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="206-208" lang="sql"/>
 </procedure>
 
-<procedure title="MOD 나머지값" id="mod">
+<procedure title="MOD 나머지값" id="mod" style="choices">
 <step>
     <p>MOD(num1, num2)</p>
 </step>
@@ -22,7 +22,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="214-216" lang="sql"/>
 </procedure>
 
-<procedure title="ROUND 반올림" id="round">
+<procedure title="ROUND 반올림" id="round" style="choices">
 <step>
     <p>ROUND(num, position)</p>
 </step>
@@ -32,7 +32,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="220-224" lang="sql"/>
 </procedure>
 
-<procedure title="FLOOR 내림" id="floor">
+<procedure title="FLOOR 내림" id="floor" style="choices">
 <step>
     <p>FLOOR(num, position)</p>
 </step>
@@ -42,7 +42,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="227-228" lang="sql"/>
 </procedure>
 
-<procedure title="TRUNC 내림" id="trunc">
+<procedure title="TRUNC 내림" id="trunc" style="choices">
 <step>
     <p>TRUNC(num, position)</p>
 </step>
@@ -52,7 +52,7 @@
     <code-block src="/Language/dbms/sql/oracle_function.sql" include-lines="231-234" lang="sql"/>
 </procedure>
 
-<procedure title="CEIL 올림" id="ceil">
+<procedure title="CEIL 올림" id="ceil" style="choices"> 
 <step>
     <p>CEIL(num, position)</p>
 </step>
