@@ -12,97 +12,79 @@
 
 
 -- SUM(숫자가 기록된 컬럼명) : 합계를 구하여 리턴
-SELECT 
-	SUM(SALARY)
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT SUM(SALARY)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 
 -- AVG(숫자가 기록된 컬럼명) : 평균을 구하여 리턴
-SELECT 
-	AVG(SALARY)
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT AVG(SALARY)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 -- 기본 평균, 중복제거 평균, NULL포함 평균
-SELECT 
-	AVG(BONUS) AS 기본평균
-	, AVG(NVL(BONUS,0)) AS NULL포함평균
-	,AVG(DISTINCT (BONUS)) AS 중복제거평균
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT AVG(BONUS) AS 기본평균
+	 , AVG(NVL(BONUS,0)) AS NULL포함평균
+	 ,AVG(DISTINCT (BONUS)) AS 중복제거평균
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 
 -- MIN(컬럼명) : 컬럼에서 가장 작은 값 리턴
 -- 취급하는 자료형은 ANY TYPE 이다.
-
-SELECT 
-	MIN(EMAIL)
-	, MIN(HIRE_DATE)
-	, MIN(SALARY)
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT MIN(EMAIL)
+	 , MIN(HIRE_DATE)
+	 , MIN(SALARY)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 -- MAX(컬럼명) : 컬럼에서 가장 큰 값 리턴
 -- 취급하는 자료형은 ANY TYPE 이다.
-
-SELECT 
-	MAX(EMAIL)
-	, MAX(HIRE_DATE)
-	, MAX(SALARY)
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT MAX(EMAIL)
+	 , MAX(HIRE_DATE)
+	 , MAX(SALARY)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 -- COUNT (* | 컬럼) : 행의 갯수를 헤아려서 리턴
 -- COUNT ([DISTINCT] 컬럼명) : 중복을 제거한 행 갯수 리턴
 -- COUNT (*) : NULL을 포함한 전체 행 갯수 리턴
 -- COUNT (컬럼명) : NULL를 제외한 실제 값이 기록된 행 갯 수 리턴
-
-SELECT 
-	COUNT(*)
-	, COUNT(DEPT_CODE)
-	, COUNT(DISTINCT DEPT_CODE)
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT COUNT(*)
+	 , COUNT(DEPT_CODE)
+	 , COUNT(DISTINCT DEPT_CODE)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 
 -- 단일행 함수
 -- 문자 관련 함수
 -- : LENGTH, LENGTHB, SUBSTR, UPPER, LOWER, INSTR ....
+SELECT LENGTH('오라클')
+	 , LENGTHB('오라클')
+  FROM DUAL ;
 
-SELECT 
-	LENGTH('오라클')
-	, LENGTHB('오라클') 
-FROM DUAL ;
-
-SELECT 
-	LENGTH(EMAIL)
-	, LENGTHB (EMAIL)
-FROM "C##EMPLOYEE".EMPLOYEE;
-
+SELECT LENGTH(EMAIL)
+	 , LENGTHB (EMAIL)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 --INSTR('문자열' | '컬럼명' | '문자', 찾을 위치의 시작값, [빈도])
-SELECT 
-	EMAIL 
-	, INSTR(EMAIL,'@',1) 위치
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMAIL
+	 , INSTR(EMAIL,'@',1) 위치
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
-SELECT INSTR('AABAACAABBAA','B')  FROM DUAL ;
-SELECT INSTR('AABAACAABBAA','B',1)  FROM DUAL ;
-SELECT INSTR('AABAACAABBAA','B',-1)  FROM DUAL ;
-SELECT INSTR('AABAACAABBAA','B',-1,2)  FROM DUAL ;
-SELECT INSTR('AABAACAABBAA','B',1,2)  FROM DUAL ;
+SELECT INSTR('AABAACAABBAA','B') FROM DUAL ;
+SELECT INSTR('AABAACAABBAA','B',1) FROM DUAL ;
+SELECT INSTR('AABAACAABBAA','B',-1) FROM DUAL ;
+SELECT INSTR('AABAACAABBAA','B',-1,2) FROM DUAL ;
+SELECT INSTR('AABAACAABBAA','B',1,2) FROM DUAL ;
 
 -- LPAD / RPAD : 주어진 컬럼 문자열에 임의의 문자열을 덧붙여 길이 N의 문자열을 반환하는 함수
-SELECT 
-	LPAD(EMAIL, 20, '#') 
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT LPAD(EMAIL, 20, '#')
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
-SELECT 
-	RPAD(LPAD(EMAIL,10), 20, '#') 
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT RPAD(LPAD(EMAIL,10), 20, '#')
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
-SELECT 
-	LPAD(EMAIL, 10) 
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT LPAD(EMAIL, 10)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
-SELECT 
-	RPAD(EMAIL, 10) 
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT RPAD(EMAIL, 10)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 --LTRIM / RTRIM : 주어진 컬럼이나 문자열 왼쪽 / 오른쪽에서 지정한 문자 혹은 문자열을 제거한 나머지를 반환하는 함수
 SELECT LTRIM('    GREEDY')  FROM DUAL;
@@ -120,8 +102,6 @@ SELECT RTRIM('GREEDY123123','123') FROM  DUAL;
 SELECT RTRIM('GREEDYBACBACACB','ABC') FROM  DUAL;
 SELECT RTRIM('GREEDY5289','0123456789') FROM  DUAL;
 
-
---TRIM: 주어진 컬럼이나 문자열의 앞/뒤에 지정한 문자를 제거
 SELECT  TRIM('    GREEDY    ') FROM DUAL;
 SELECT  TRIM('Z' FROM 'ZZZGREEDYZZZ') FROM DUAL;
 SELECT  TRIM(LEADING 'Z' FROM 'ZZZGREEDYZZZ') FROM DUAL ;
@@ -135,47 +115,40 @@ SELECT  SUBSTR('SHOWMETHEMONEY',7) FROM DUAL ;
 SELECT  SUBSTR('SHOWMETHEMONEY',-8,3) FROM DUAL ;
 SELECT  SUBSTR('쇼우 미 더 머니', 2,5) FROM dual;
 
-SELECT 
-	  EMP_NAME
-	, SUBSTR(EMP_NO,8,1)
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMP_NAME
+	 , SUBSTR(EMP_NO,8,1)
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 --EMPLOYEE  테이블에서 직원들의 주민번호를 조회하여
 -- 사원명, 생년, 생월 ,생일을 각각 분리하여 조회
 -- 단, 컬럼의 별칭은 사원명, 생년, 생월, 생일로 한다.
-
-SELECT 
-	EMP_NAME AS 사원명
-	,SUBSTR(EMP_NO, 1,2) AS 생년
-	,SUBSTR(EMP_NO, 3,2) AS 생월
-	,SUBSTR(EMP_NO, 5,2) AS 생일	
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMP_NAME AS 사원명
+	 , SUBSTR(EMP_NO, 1,2) AS 생년
+	 , SUBSTR(EMP_NO, 3,2) AS 생월
+	 , SUBSTR(EMP_NO, 5,2) AS 생일
+  FROM "C##EMPLOYEE".EMPLOYEE;
                                                                                                                                                                                                                                                                                                                                                                                                       	
 
 -- 날짜 데이터에서 사용할 수 있다,
 -- 직원들의 입사년도, 입사월, 입사날짜를 분리 조
-
-SELECT 
-	EMP_NAME AS 사원명
-	, HIRE_DATE 
-	,SUBSTR(HIRE_DATE, 1,2) AS 입사년도
-	,SUBSTR(HIRE_DATE, 4,2) AS 입사월
-	,SUBSTR(HIRE_DATE, 7,2) AS 입사날짜
-FROM "C##EMPLOYEE".EMPLOYEE;
+SELECT EMP_NAME AS 사원명
+	 , HIRE_DATE
+	 , SUBSTR(HIRE_DATE, 1,2) AS 입사년도
+	 , SUBSTR(HIRE_DATE, 4,2) AS 입사월
+	 , SUBSTR(HIRE_DATE, 7,2) AS 입사날짜
+  FROM "C##EMPLOYEE".EMPLOYEE;
 
 -- WHERE 절에서 함수 사용도 가능함
 -- 여직원들의 모든 컬럼 정보를 조회
 
-SELECT 
-	*
-FROM "C##EMPLOYEE".EMPLOYEE
-WHERE  SUBSTR(EMP_NO,8,1) IN  ('2','4'); 
+SELECT *
+  FROM "C##EMPLOYEE".EMPLOYEE
+ WHERE SUBSTR(EMP_NO,8,1) IN  ('2','4');
 
 -- WHERE 절에는 단일행 함수만 사용하다.
-SELECT 
-	*
-FROM "C##EMPLOYEE".EMPLOYEE
-WHERE SALARY  > AVG(SALARY); -- 그룹함수 사용하면 에러
+SELECT *
+  FROM "C##EMPLOYEE".EMPLOYEE
+ WHERE SALARY  > AVG(SALARY); -- 그룹함수 사용하면 에러
 
 -- 함수 중첩 사용가능 : 함수안에서 함수를 사용할 수 있다.
 -- EMPLOYEE 테이블에서 사원명, 주민번호 조회
@@ -195,10 +168,9 @@ SELECT
 FROM "C##EMPLOYEE".EMPLOYEE;
 
 -- SUBSTRB : 바이트 단위로 추출하는 함수
-SELECT 
-	SUBSTR('ORACLE',3,2)
-	,SUBSTRB('ORACLE',3,2)
-FROM DUAL; 
+SELECT SUBSTR('ORACLE',3,2)
+	  ,SUBSTRB('ORACLE',3,2)
+  FROM DUAL;
 
 SELECT 
 	SUBSTR('오라클',2,2)
@@ -208,47 +180,40 @@ FROM DUAL;
 -- LOWER / UPPER / INITCAP : 대소문자 변경해 주는 함수
 
 -- LOWER(문자열 | 컬럼) : 소문자로 변경해주는 함수
-SELECT
-	LOWER('Welcome To My World')
-FROM dual;
+SELECT LOWER('Welcome To My World')
+  FROM dual;
 
 -- UPPER(문자열 | 컬럼) : 문자로 변경해주는 함수
-SELECT
-	UPPER('Welcome To My World')
-FROM dual;
+SELECT UPPER('Welcome To My World')
+  FROM dual;
 
 -- INITCAP : 앞글자만 대문자로 변경해주는 함
-SELECT
-	INITCAP('welcome to my world')
-FROM dual;
+SELECT INITCAP('welcome to my world')
+  FROM dual;
 
 -- CONCAT : 문자열 혹은 컬럼 두개를 입력 받아서 하나로 합친 후 리턴
-SELECT 
-	CONCAT('가나다라','ABCD')
-	,'가나다라' || 'ABCD'
-FROM dual ;
+SELECT CONCAT('가나다라','ABCD')
+	 , '가나다라' || 'ABCD'
+  FROM dual ;
 
 
 -- REPLACE : 컬럼 혹은 문자열을 입력받아 변경하고자 하는 문자열을 변경하려고 하는 문자열로 바꾼 후 리턴
-SELECT 
-	REPLACE('서울시 강남구 역삼동','역삼동','삼성동')
-FROM dual ;
+SELECT REPLACE('서울시 강남구 역삼동','역삼동','삼성동')
+  FROM dual ;
 
 -- 숫자처리 함수 : ABS, MOD, ROUND, FLOOR, TRUNC, CELL
---AB(숫자 | 숫자로된 컬럼명) : 절대값 구하는 함수
-SELECT 
-	ABS(-10)
-	, ABS(10)
-FROM dual;
+--ABS(숫자 | 숫자로된 컬럼명) : 절대값 구하는 함수
+SELECT ABS(-10)
+	 , ABS(10)
+  FROM dual;
 
 
 -- MOD(숫자 | 숫자로된 컬럼명, 숫자 | 숫자로된 컬럼명)
 -- 두 수를 나누어서 나머지를 구하는 함수
 -- 처음 인자는 나누어지는 수, 두번째 인자는 나눌 수
-SELECT 
-	MOD(10,5)
-	,MOD(10,3)
-FROM dual ;
+SELECT MOD(10,5)
+     , MOD(10,3)
+  FROM dual;
 
 -- ROUND(숫자 | 숫자로된 컬러명, [위치])
 -- 반올림해서 리턴하는 함수
