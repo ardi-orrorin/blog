@@ -34,7 +34,9 @@
                 <toc-element toc-title="Framework">
                 </toc-element>
                 <toc-element toc-title="Library" >
-                    <toc-element topic="java_library_Quartz.md"/>
+                    <toc-element topic="java_library_Quartz.md">
+                        <toc-element topic="java_libray_quartz_expression.md"/>
+                    </toc-element>
                     <toc-element toc-title="Reactive">
 
                         <toc-element topic="java_library_reactive_Basic.md"/>
