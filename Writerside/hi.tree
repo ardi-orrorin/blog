@@ -34,6 +34,10 @@
                 <toc-element toc-title="Framework">
                 </toc-element>
                 <toc-element toc-title="Library" >
+                    <toc-element toc-title="JPA">
+
+                        <toc-element topic="java_library_jpa_Pageable.md"/>
+                    </toc-element>
                     <toc-element topic="java_library_Quartz.md">
                         <toc-element topic="java_libray_quartz_expression.md"/>
                     </toc-element>
@@ -253,6 +257,13 @@
             </toc-element>
         </toc-element>
         <toc-element toc-title="DevOps">
+            <toc-element toc-title="HTTP">
+                <toc-element toc-title="HTTPS">
+
+                    <toc-element topic="http2_TLS.md"/>
+                </toc-element>
+
+            </toc-element>
             <toc-element toc-title="git">
 
                 <toc-element topic="git_Filter.md"/>
