@@ -253,6 +253,10 @@
             </toc-element>
         </toc-element>
         <toc-element toc-title="DevOps">
+            <toc-element toc-title="git">
+
+                <toc-element topic="git_Filter.md"/>
+            </toc-element>
             <toc-element toc-title="Docker" sort-children="ascending">
                 <toc-element topic="docker_Glossary.md"/>
                 <toc-element toc-title="01. CLI" sort-children="ascending">
