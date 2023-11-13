@@ -5,6 +5,9 @@
         <analytics-head-script-file>
             test.js
         </analytics-head-script-file>
+        <analytics-body-html-file>
+            test.js
+        </analytics-body-html-file>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
