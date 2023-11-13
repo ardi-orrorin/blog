@@ -11,4 +11,4 @@
 
 ```Groovy
 ```
-{src="devops/jenkins/`p`ipeline/directive" include-lines="244-269"}
+{src="devops/jenkins/pipeline/directive" include-lines="244-269"}
