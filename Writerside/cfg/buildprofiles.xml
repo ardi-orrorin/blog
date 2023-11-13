@@ -2,12 +2,13 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
         <primary-color>aqua</primary-color>
+        <
+        <analytics-head-script-file>
+            test.js
+        </analytics-head-script-file>
         <analytics-body-html-file>
             test.js
         </analytics-body-html-file>
-<!--        <custom-video-cover>-->
-<!--                1.jpg-->
-<!--        </custom-video-cover>-->
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
