@@ -2,6 +2,9 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
         <primary-color>aqua</primary-color>
+        <analytics-head-script-file>
+            test.js
+        </analytics-head-script-file>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
@@ -9,4 +12,5 @@
         <link href="https://certain-allspice-c69.notion.site/Dev-Study-58e7068499db4c8d8e0dc4250d5d44de?pvs=4">Notion</link>\
         <copyright>Copyright 2023. Orrorin All pictures cannot be copied without permission.</copyright>
     </footer>
+
 </buildprofiles>

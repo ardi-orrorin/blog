@@ -26,5 +26,9 @@
         <description>Created after removal of "00. CLI" from Portfolio</description>
         <accepts>docker_CLI.html</accepts>
     </rule>
+    <rule id="29c0611f">
+        <description>Created after removal of "How to" from Portfolio</description>
+        <accepts>How-to.html</accepts>
+    </rule>
 
 </rules>

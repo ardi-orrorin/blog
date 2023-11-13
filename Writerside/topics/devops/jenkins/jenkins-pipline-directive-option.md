@@ -27,4 +27,3 @@
 ```
 {src="devops/jenkins/pipeline/directive" include-lines="69-73"}
 
-roovy

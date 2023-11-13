@@ -4,15 +4,6 @@
 <instance-profile id="hi"
                  name="Portfolio"
                  start-page="start.md">
-    <toc-element toc-title="Profile">
-        <toc-element topic="start.md"/>
-        <toc-element topic="Education-Incomplited.md">
-            <toc-element topic="23032309.md"/>
-        </toc-element>
-        <toc-element toc-title="Carrer">
-
-        </toc-element>
-    </toc-element>
     <toc-element toc-title="Team-Project" sort-children="descending">
         <toc-element topic="02-INFOMATE.md" />
         <toc-element topic="01-OSMAS.md" />
@@ -360,6 +351,13 @@
 
             </toc-element>
         </toc-element>
+    </toc-element>
+    <toc-element toc-title="Profile">
+        <toc-element topic="start.md"/>
+        <toc-element topic="Education-Incomplited.md">
+            <toc-element topic="23032309.md"/>
+        </toc-element>
+        <toc-element toc-title="Carrer"/>
     </toc-element>
 
 </instance-profile>
