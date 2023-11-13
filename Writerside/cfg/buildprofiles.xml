@@ -2,10 +2,15 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <variables>
         <primary-color>aqua</primary-color>
-        <
         <analytics-head-script-file>
             test.js
         </analytics-head-script-file>
+        <color-preset>
+            soft
+        </color-preset>
+        <noindex-content>
+            false
+        </noindex-content>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
