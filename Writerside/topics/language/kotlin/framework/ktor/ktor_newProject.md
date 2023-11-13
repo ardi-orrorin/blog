@@ -19,7 +19,6 @@
 
 ## 3. 프로젝트 시작
 ![](ktor_newproject_run.jpg)
-   
 
 <seealso>
 <category ref="ref">

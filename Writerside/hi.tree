@@ -4,7 +4,6 @@
 <instance-profile id="hi"
                  name="Portfolio"
                  start-page="start.md">
-
     <toc-element toc-title="Profile">
         <toc-element topic="start.md"/>
         <toc-element topic="Education-Incomplited.md">
@@ -52,8 +51,7 @@
                 <toc-element toc-title="Core">
 
                 </toc-element>
-                <toc-element toc-title="Example">
-
+                <toc-element toc-title="Sample">
                     <toc-element topic="javascript_example_inputFileImagePreview.md"/>
                 </toc-element>
                 <toc-element toc-title="Framework">
@@ -178,7 +176,12 @@
                     <toc-element toc-title="CORE">
 
                     </toc-element>
+                    <toc-element toc-title="Sample">
+
+                        <toc-element topic="css_sample_ResetStyle.md"/>
+                    </toc-element>
                     <toc-element toc-title="SCSS" sort-children="ascending">
+                        <toc-element topic="scss_ProjectPattern.md"/>
                         <toc-element topic="scss_Tutorial.md"/>
                         <toc-element topic="scss_Nesting.md"/>
                         <toc-element topic="scss_Modules.md"/>
@@ -296,6 +299,22 @@
                 <toc-element toc-title="03. Polling Build">
 
                     <toc-element topic="jenkins_Github_polling_build.md"/>
+                </toc-element>
+                <toc-element toc-title="90. Pipeline">
+                    <toc-element toc-title="01. Directive">
+
+                        <toc-element topic="jenkins-pipline-directive-agent.md"/>
+                        <toc-element topic="jenkins-pipline-directive-enviroments.md"/>
+                        <toc-element topic="03-option.md"/>
+                        <toc-element topic="jenkins-pipline-directive-trigger.md"/>
+                        <toc-element topic="jenkins-pipline-directive-parameter.md"/>
+                        <toc-element topic="jenkins-pipline-directive-library.md"/>
+                        <toc-element topic="jenkins-pipline-directive-stages.md"/>
+                        <toc-element topic="08-post.md"/>
+                    </toc-element>
+                    <toc-element toc-title="02. Practice">
+
+                    </toc-element>
                 </toc-element>
                 <toc-element toc-title="99. Plugins">
                     <toc-element topic="jenkins_nodejs.md"/>

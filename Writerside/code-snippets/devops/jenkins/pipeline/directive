@@ -1,0 +1,270 @@
+pipeline {
+    agent any
+}
+
+pipeline {
+    agent none
+}
+
+pipeline {
+    agent {
+        label {
+            label '<labelName>' // 파이프라인이나 스테이지에서 <label>이라는 레이블을 가진 에이전트에서 모두 실행됨을 의미
+            customWorkspace '/tmp/my-defined-label' // agent가 사용될 workspace 지정
+        }
+    }
+}
+
+pipeline {
+    agent {
+        docker {
+            image 'node:7-alpine' // docker image를 사용해 agent를 실행
+            label '<labelName>' // docker image를 사용해 agent를 실행할 노드의 label
+            args '-p 3000:3000' // docker run에 전달할 추가적인 인자
+        }
+    }
+}
+
+pipeline {
+    agent {
+        dockerfile {
+            filename 'dir/dockerfile name' // dockerfile이 위치한 경로
+            label '<labelName>' // dockerfile을 사용해 agent를 실행할 노드의 label
+            args '-p 3000:3000' // docker run에 전달할 추가적인 인자
+        }
+    }
+}
+
+pipeline {
+    stage 'abc' {
+        agent {
+            node {
+                label '<labelName>' // stage abc에서만 사용될 agent
+            }
+        }
+    }
+}
+
+environment {
+    TIMEZONE = "asia/seoul"
+}
+
+
+environment {
+    ADMIN_USER = credentials('admin_user')
+}
+
+pipeline {
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+}
+
+pipeline {
+    options {
+        disableConcurrentBuilds()
+    }
+}
+
+pipeline {
+    options {
+        Timeout(time: 1, unit: 'HOURS')
+        timestamps()
+    }
+}
+
+
+trigger { cron('10 * * * *') } // 10분마다 실행
+trigger { cron('30 * * * *') } // 30분마다 실행
+trigger { cron('H/30 * * * *') } // 30분마다 실행
+trigger { cron('H(0,30) * * * *') } // 매시간 0분부터 30분 사이에 실행
+
+triggers {
+    upstream(
+        upstreamProjects: 'pipeline/deploy',   //pipeline/deploy 가 실행되면 해당 트리거 실행
+        threshold: hudson.model.Result.SUCCESS // upstreamProjects가 성공하면 실행
+        threshold: hudson.model.Result.FAILURE // upstreamProjects가 실패하면 실행
+    )
+}
+
+triggers {
+    githubPush()
+}
+
+parameters {
+    booleanParam(name: 'DEBUG', defaultValue: false, description: 'Enable debug mode?')
+}
+
+parameters {
+    choice(name: 'CHOICE', choices: ['A', 'B', 'C'], description: 'Choose a letter')
+}
+
+parameters {
+    file(fileLocation: '/uploadDir', description: 'Choose a file') // {workspace}/uploadDir 의미
+}
+
+parameters {
+    string(name: 'STRING', defaultValue: 'Hello, world!', description: 'Enter some text')
+}
+
+parameters {
+    text(name: 'inputText', defaultValue: 'Hello, world!', description: 'Enter some text')
+}
+
+parameters {
+    password(name: 'PASSWORD', defaultValue: 'secret', description: 'Enter a password')
+}
+
+parameters {
+    run(
+        name: 'RUN',
+        description: 'Choose a build',
+        filter: 'Successful Builds',
+        project: 'my-project'
+    )
+}
+
+pipeline {
+    agent any
+    parameters {
+        string(name: 'NAME', defaultValue: 'World', description: 'Who should I say hello to?')
+    }
+    stages {
+        stage('Example') {
+            steps {
+                echo "Hello, ${params.NAME}!"
+            }
+        }
+    }
+}
+
+pipeline {
+    agent any
+    libraries {
+        lib('my-shared-library@master')
+    }
+    stages {
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+                echo "The answer is ${library.example}"
+            }
+        }
+    }
+}
+
+// stages
+// 필수 섹션으로 최소한 하나의 stage가 있어야 한다.
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            when {
+                branch 'main' // main 브랜치에서만 실행
+                 // buildConfig 환경 변수 값의 TEST일 때만 실행
+                environment name: 'BuildConfig', value: 'TEST'
+                 // 매개 변수의 BUILD_CONFIG 값이 TEST일 때만 실행  groovy 표현식
+                expression { return params.BUILD_CONFIG == 'TEST' }
+            }
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            when {
+                allOf {
+                    branch 'main'
+                    environment name: 'BuildConfig', value: 'TEST'
+                    expression { return params.BUILD_CONFIG == 'TEST' }
+                    // branch 'main' && environment name: 'BuildConfig', value: 'TEST' && expression { return params.BUILD_CONFIG == 'TEST' }
+                    // 위와 같은 의미이다.
+                }
+            }
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            when {
+                anyOf {
+                    branch 'main'
+                    environment name: 'BuildConfig', value: 'TEST'
+                    expression { return params.BUILD_CONFIG == 'TEST' }
+                    // branch 'main' || environment name: 'BuildConfig', value: 'TEST' || expression { return params.BUILD_CONFIG == 'TEST' }
+                    // 위와 같은 의미이다.
+                }
+            }
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            when {
+                not {
+                    branch 'main'
+                    // branch main이 아닐 때 실행한다.
+                }
+            }
+            steps {
+                echo 'This is not Main Branch Code'
+            }
+        }
+    }
+}
+
+pipeline {
+    stages {
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+            post {
+                always {
+                    echo '항상 실행'
+                }
+                changed {
+                    echo '이전 빌드와 상태가 달라졌을 때 실행'
+                }
+                failure {
+                    echo '빌드가 실패했을 때 실행'
+                }
+                success {
+                    echo '빌드가 성공할 때 실행'
+                }
+                unstable {
+                    echo '빌드가 불안전 할 때 실행'
+                }
+            }
+        }
+    }
+}
+
