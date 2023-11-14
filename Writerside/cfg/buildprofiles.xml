@@ -17,12 +17,6 @@
         <web-root>
             https://orrorin.store
         </web-root>
-        <algolia-index>
-            orrorin
-        </algolia-index>
-        <algolia-id>
-            OB29DXRV60
-        </algolia-id>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
