@@ -11,6 +11,21 @@
         <noindex-content>
             false
         </noindex-content>
+        <generate-sitemap-url-prefix>
+            https://orrorin.store
+        </generate-sitemap-url-prefix>
+        <algolia-api-key>
+            63cf61776eb4c8a63d4bdd00be66c0d2
+        </algolia-api-key>
+        <algolia-id>
+            OB29DXRV60
+        </algolia-id>
+        <algolia-index>
+            orrorin
+        </algolia-index>
+        <web-root>
+            https://orrorin.store
+        </web-root>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
