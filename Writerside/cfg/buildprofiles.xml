@@ -17,6 +17,15 @@
         <web-root>
             https://orrorin.store
         </web-root>
+        <algolia-index>
+            orrorin
+        </algolia-index>
+        <algolia-id>
+            OB29DXRV60
+        </algolia-id>
+        <algolia-api-key>
+            d0b102bfc23969c7ed4fd8e80fd60f1b
+        </algolia-api-key>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
