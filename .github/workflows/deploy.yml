@@ -17,7 +17,7 @@ env:
     ALGOLIA_ARTIFACT: algolia-indexes-HI.zip
     ALGOLIA_APP_NAME: OB29DXRV60
     ALGOLIA_INDEX_NAME: orrorin
-    ALGOLIA_KEY: ${{ github-pages.secrets.ALGOLIA_API_KEY }}
+    ALGOLIA_KEY: ${{ secrets.ALGOLIA_API_KEY }}
     CONFIG_JSON_PRODUCT: HI
     CONFIG_JSON_VERSION: 1.0
 
