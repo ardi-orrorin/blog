@@ -102,8 +102,4 @@ inputFile.addEventListener('dragleave', function(e){
 
 ```
 
-![](javascript-sample-drag-drop-1.jpg) {thumbnail="true"}
-
-![](javascript-sample-drag-drop-2.jpg) {thumbnail="true"}
-
-![](javascript-sample-drag-drop-3.jpg) {thumbnail="true"}
+![](javascript-sample-drag-drop.gif) {thumbnail="true"}
