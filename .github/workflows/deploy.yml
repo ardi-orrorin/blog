@@ -98,7 +98,7 @@ jobs:
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
-        needs: test
+        needs: test, publish-indexes
         runs-on: ubuntu-latest
         steps:
             - name: Download artifact
