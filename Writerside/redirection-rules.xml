@@ -30,5 +30,9 @@
         <description>Created after removal of "How to" from Portfolio</description>
         <accepts>How-to.html</accepts>
     </rule>
+    <rule id="102da052">
+        <description>Created after removal of "01. Class" from Portfolio</description>
+        <accepts>01-Class.html</accepts>
+    </rule>
 
 </rules>
