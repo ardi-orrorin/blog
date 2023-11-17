@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+    container_name:
+        image: image_name
+        ports:
+          - "80:80"
+        networks:
+          - app-network
+networks:
+    app-network:
+        driver: bridge

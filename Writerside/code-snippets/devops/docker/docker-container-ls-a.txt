@@ -1,0 +1,111 @@
+doocker container ls -a
+CONTAINER ID   IMAGE                              COMMAND                   CREATED          STATUS                      PORTS                                                                                              NAMES
+8e4cae5536bf   quay.io/keycloak/keycloak:latest   "/opt/keycloak/bin/k…"   27 minutes ago   Up 18 minutes               8443/tcp, 0.0.0.0:9998->8080/tcp                                                                   keycloak-keycloak-1
+06171a2aeb03   quay.io/keycloak/keycloak:latest   "/opt/keycloak/bin/k…"   29 minutes ago   Created                                                                                                                        springcloud-keycloak-1
+8c36e71061d9   quay.io/keycloak/keycloak:latest   "/opt/keycloak/bin/k…"   20 hours ago     Exited (0) 20 hours ago                                                                                                        nervous_germain
+bb775f976a87   c37bb06771d5                       "/cnb/process/web"        8 days ago       Exited (255) 8 days ago     0.0.0.0:8080->8080/tcp                                                                             eloquent_joliot
+8c1058e2e234   3699a7fa8278                       "/cnb/process/web"        8 days ago       Exited (130) 8 days ago                                                                                                        goofy_tharp
+13b0d1b21904   3699a7fa8278                       "/cnb/process/web"        8 days ago       Exited (130) 8 days ago                                                                                                        busy_goodall
+2143580f861e   rabbitmq                           "docker-entrypoint.s…"   5 weeks ago      Exited (255) 4 weeks ago    4369/tcp, 0.0.0.0:5672->5672/tcp, 5671/tcp, 15691-15692/tcp, 25672/tcp, 0.0.0.0:15672->15672/tcp   rabbitmq
+a626076611be   mongo                              "docker-entrypoint.s…"   5 months ago     Exited (0) 6 weeks ago                                                                                                         mongodb-container
+0bea338b038c   confluentinc/cp-kafka:latest       "/etc/confluent/dock…"   7 months ago     Exited (143) 6 weeks ago                                                                                                       mail-kafka-1
+90029d8c6c59   confluentinc/cp-zookeeper:latest   "/etc/confluent/dock…"   7 months ago     Exited (143) 6 weeks ago                                                                                                       mail-zookeeper-1
+54995f55ce8c   ubuntu:20.04                       "/bin/bash"               8 months ago     Exited (0) 7 months ago                                                                                                        gitlab
+bfa17c5e061b   python                             "python3"                 8 months ago     Exited (137) 7 months ago                                                                                                      fastapi
+efd089b8e220   kibana:7.17.9                      "/bin/tini -- /usr/l…"   9 months ago     Exited (0) 5 weeks ago                                                                                                         wonderful_cohen
+7ef8aa0f9d05   elasticsearch:7.17.9               "/bin/tini -- /usr/l…"   9 months ago     Exited (143) 5 weeks ago                                                                                                       elasticsearch
+34ff49d28ad2   redis                              "docker-entrypoint.s…"   9 months ago     Exited (0) 4 months ago                                                                                                        some-redis
+842e79f9cb71   2ce4f03f420b                       "docker-entrypoint.s…"   9 months ago     Exited (0) 3 months ago     0.0.0.0:5432->5432/tcp                                                                             postgres
+
+
+
+docker rm container 842e79f9cb71
+
+CONTAINER ID   IMAGE                              COMMAND                   CREATED          STATUS                      PORTS                              NAMES
+8e4cae5536bf   quay.io/keycloak/keycloak:latest   "/opt/keycloak/bin/k…"   37 minutes ago   Up 28 minutes               8443/tcp, 0.0.0.0:9998->8080/tcp   keycloak-keycloak-1
+8c36e71061d9   quay.io/keycloak/keycloak:latest   "/opt/keycloak/bin/k…"   20 hours ago     Exited (0) 20 hours ago                                        nervous_germain
+bb775f976a87   c37bb06771d5                       "/cnb/process/web"        8 days ago       Exited (255) 8 days ago     0.0.0.0:8080->8080/tcp             eloquent_joliot
+8c1058e2e234   3699a7fa8278                       "/cnb/process/web"        8 days ago       Exited (130) 8 days ago                                        goofy_tharp
+13b0d1b21904   3699a7fa8278                       "/cnb/process/web"        8 days ago       Exited (130) 8 days ago                                        busy_goodall
+a626076611be   mongo                              "docker-entrypoint.s…"   5 months ago     Exited (0) 6 weeks ago                                         mongodb-container
+0bea338b038c   confluentinc/cp-kafka:latest       "/etc/confluent/dock…"   7 months ago     Exited (143) 6 weeks ago                                       mail-kafka-1
+90029d8c6c59   confluentinc/cp-zookeeper:latest   "/etc/confluent/dock…"   7 months ago     Exited (143) 6 weeks ago                                       mail-zookeeper-1
+54995f55ce8c   ubuntu:20.04                       "/bin/bash"               8 months ago     Exited (0) 7 months ago                                        gitlab
+bfa17c5e061b   python                             "python3"                 8 months ago     Exited (137) 7 months ago                                      fastapi
+efd089b8e220   kibana:7.17.9                      "/bin/tini -- /usr/l…"   9 months ago     Exited (0) 5 weeks ago                                         wonderful_cohen
+7ef8aa0f9d05   elasticsearch:7.17.9               "/bin/tini -- /usr/l…"   9 months ago     Exited (143) 5 weeks ago                                       elasticsearch
+34ff49d28ad2   redis                              "docker-entrypoint.s…"   9 months ago     Exited (0) 4 months ago                                        some-redis
+
+
+docker image ls -a
+
+REPOSITORY                     TAG              IMAGE ID       CREATED         SIZE
+bitnami/keycloak               latest           4fd1edb899cd   3 weeks ago     627MB
+quay.io/keycloak/keycloak      latest           6cf426b6a7e6   3 weeks ago     445MB
+rabbitmq                       latest           d92d7f857572   6 weeks ago     201MB
+paketobuildpacks/run           base-cnb         f2e5000af0cb   4 months ago    87.1MB
+mongo                          latest           376ea24ce0f0   5 months ago    624MB
+python                         latest           3d9a31b4cc88   8 months ago    871MB
+ubuntu                         20.04            625d192afcdc   8 months ago    65.7MB
+confluentinc/cp-kafka          latest           a7073da97a1f   9 months ago    853MB
+confluentinc/cp-zookeeper      latest           c43998763eb6   9 months ago    853MB
+192.168.0.4:5000/web/svelte    v1               ffd916535ff0   9 months ago    144MB
+192.168.0.4:5000/web/fastapi   v1               b6f52b1856ba   9 months ago    1.12GB
+redis                          7.0.8            e79ba23ed43b   9 months ago    111MB
+postgres                       v1               e2e4d6fb2ec8   9 months ago    1.07GB
+elasticsearch                  7.17.9           e4b82614cac8   9 months ago    612MB
+kibana                         7.17.9           6d71855e558e   9 months ago    889MB
+redis                          latest           667aff0d6b0a   10 months ago   111MB
+quay.io/keycloak/keycloak      legacy           83569934420d   13 months ago   726MB
+avhost/mesos-mini              1.11.0-0.2.0-1   ceae3b4c9e09   14 months ago   1.01GB
+wurstmeister/kafka             latest           db97697f6e28   17 months ago   457MB
+wurstmeister/zookeeper         latest           3f43f72cb283   4 years ago     510MB
+paketobuildpacks/builder       base             050ed48532b2   43 years ago    1.31GB
+
+
+docker image rm postgres:v1
+Untagged: postgres:v1
+Deleted: sha256:e2e4d6fb2ec84200185135a2d7ae980957695dcbe7b87e84bfc83308570e9bf9
+
+docker image ls -a
+
+REPOSITORY                     TAG              IMAGE ID       CREATED         SIZE
+bitnami/keycloak               latest           4fd1edb899cd   3 weeks ago     627MB
+quay.io/keycloak/keycloak      latest           6cf426b6a7e6   3 weeks ago     445MB
+rabbitmq                       latest           d92d7f857572   6 weeks ago     201MB
+paketobuildpacks/run           base-cnb         f2e5000af0cb   4 months ago    87.1MB
+mongo                          latest           376ea24ce0f0   5 months ago    624MB
+python                         latest           3d9a31b4cc88   8 months ago    871MB
+ubuntu                         20.04            625d192afcdc   8 months ago    65.7MB
+confluentinc/cp-kafka          latest           a7073da97a1f   9 months ago    853MB
+confluentinc/cp-zookeeper      latest           c43998763eb6   9 months ago    853MB
+192.168.0.4:5000/web/svelte    v1               ffd916535ff0   9 months ago    144MB
+192.168.0.4:5000/web/fastapi   v1               b6f52b1856ba   9 months ago    1.12GB
+redis                          7.0.8            e79ba23ed43b   9 months ago    111MB
+elasticsearch                  7.17.9           e4b82614cac8   9 months ago    612MB
+kibana                         7.17.9           6d71855e558e   9 months ago    889MB
+redis                          latest           667aff0d6b0a   10 months ago   111MB
+quay.io/keycloak/keycloak      legacy           83569934420d   13 months ago   726MB
+avhost/mesos-mini              1.11.0-0.2.0-1   ceae3b4c9e09   14 months ago   1.01GB
+wurstmeister/kafka             latest           db97697f6e28   17 months ago   457MB
+wurstmeister/zookeeper         latest           3f43f72cb283   4 years ago     510MB
+paketobuildpacks/builder       base             050ed48532b2   43 years ago    1.31GB
+
+
+docker container rm -f 8c1058e2e234
+8c1058e2e234
+
+docker container ls -a
+CONTAINER ID   IMAGE                              COMMAND                   CREATED          STATUS                      PORTS                              NAMES
+8e4cae5536bf   quay.io/keycloak/keycloak:latest   "/opt/keycloak/bin/k…"   47 minutes ago   Up 38 minutes               8443/tcp, 0.0.0.0:9998->8080/tcp   keycloak-keycloak-1
+8c36e71061d9   quay.io/keycloak/keycloak:latest   "/opt/keycloak/bin/k…"   20 hours ago     Exited (0) 20 hours ago                                        nervous_germain
+bb775f976a87   c37bb06771d5                       "/cnb/process/web"        8 days ago       Exited (255) 8 days ago     0.0.0.0:8080->8080/tcp             eloquent_joliot
+13b0d1b21904   3699a7fa8278                       "/cnb/process/web"        8 days ago       Exited (130) 8 days ago                                        busy_goodall
+a626076611be   mongo                              "docker-entrypoint.s…"   5 months ago     Exited (0) 6 weeks ago                                         mongodb-container
+0bea338b038c   confluentinc/cp-kafka:latest       "/etc/confluent/dock…"   7 months ago     Exited (143) 6 weeks ago                                       mail-kafka-1
+90029d8c6c59   confluentinc/cp-zookeeper:latest   "/etc/confluent/dock…"   7 months ago     Exited (143) 6 weeks ago                                       mail-zookeeper-1
+54995f55ce8c   ubuntu:20.04                       "/bin/bash"               8 months ago     Exited (0) 7 months ago                                        gitlab
+bfa17c5e061b   python                             "python3"                 8 months ago     Exited (137) 7 months ago                                      fastapi
+efd089b8e220   kibana:7.17.9                      "/bin/tini -- /usr/l…"   9 months ago     Exited (0) 5 weeks ago                                         wonderful_cohen
+7ef8aa0f9d05   elasticsearch:7.17.9               "/bin/tini -- /usr/l…"   9 months ago     Exited (143) 5 weeks ago                                       elasticsearch
+34ff49d28ad2   redis                              "docker-entrypoint.s…"   9 months ago     Exited (0) 4 months ago                                        some-redis

@@ -292,6 +292,7 @@
                     <toc-element topic="docker_Container.md"/>
                 </toc-element>
                 <toc-element topic="docker_Dockerfile.md"/>
+                <toc-element topic="devops-docker-Docker-Compose.md"/>
             </toc-element>
             <toc-element toc-title="ElasticStack">
 

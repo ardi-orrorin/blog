@@ -28,6 +28,11 @@
 <p>도커가 이미지로부터 컨테이너를 실행했을 때 자동으로 실핼할 명령 스크립트</p>
 </procedure>
 
+<procedure title="ENTRYPOINT">
+<p>컨터이너가 실행시 자동으로 실핼할 명령 스크립트 </p>
+<p>고정으로 시작될 명령어가 적합, cmd 파라미터가 추가되거 변동있을 명령어는 cmd 추천</p>
+</procedure>
+
 <procedure title="Example">
 <code-block lang="docker">
 FROM tomcat/latest 
@@ -39,11 +44,18 @@ WORKER /test
 COPY app.jar .
 // 로컬의 app.jar 파일을 작업폴더 /test으로 복사
 CMD ["java", "-jar", "app.jar"]
-// 컨테이터 실행시 실할할 명령어 'end-point'
+// 컨테이터 실행시 실행할 명령어 'ENTRYPOINT' 사용
 </code-block>
 </procedure>
 
 
 <procedure title="Build" id="build">
-    <step></step>
+<p>도커 파일을 통해 도커 이미지를 생성한다.</p>
+<code-block lang="shell">
+    docker image build -t Image_Name:Tag_Name Dockerfile_Path[생략가능]
+</code-block>
+<p>Example</p>
+<code-block lang="shell">
+    docker image build -t repo/text:latest
+</code-block>
 </procedure>
