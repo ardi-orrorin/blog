@@ -16,6 +16,10 @@
 <p>환경 변수 값을 지정하기 위한 인스트럭션</p>
 </procedure>
 
+<procedure title="ADD">
+<p>새 파일, 디렉터리 또는 원격 파일 URL을 복사하여 경로에 있는 이미지의 파일 시스템에 추가합니다</p>
+</procedure>
+
 <procedure title="WORKDIR">
 <p>컨테이너의 이미지 파일 시스템을 지정하고 작업 디렉토리로 지정하는 인스트럭션</p>
 </procedure>
@@ -59,3 +63,10 @@ CMD ["java", "-jar", "app.jar"]
     docker image build -t repo/text:latest
 </code-block>
 </procedure>
+
+
+<seealso>
+<category ref="ref">
+<a href="https://docs.docker.com/engine/reference/builder/">Docker-Homepage</a>
+</category>
+</seealso>
