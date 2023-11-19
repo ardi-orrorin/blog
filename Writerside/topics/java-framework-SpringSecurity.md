@@ -57,10 +57,9 @@
 {src="Language/java/framework/springSecurity.kt" include-lines="38-56"}
 
 
-
 <seealso>
     <category ref="ref">
-        <a href="https://ko.wikipedia.org/wiki/%EA%B5%90%EC%B0%A8_%EC%B6%9C%EC%B2%98_%EB%A6%AC%EC%86%8C%EC%8A%A4_%EA%B3%B5%EC%9C%A0">위키백과 CORS</a>
-        <a href="https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9D%B4%ED%8A%B8_%EA%B0%84_%EC%9A%94%EC%B2%AD_%EC%9C%84%EC%A1%B0">위키백과 CSRF</a>
+        <a href="https://ko.wikipedia.org/wiki/교차_출처_리소스_공유">위키백과 CORS</a>
+        <a href="https://ko.wikipedia.org/wiki/사이트_간_요청_위조">위키백과 CSRF</a>
     </category>
 </seealso>
