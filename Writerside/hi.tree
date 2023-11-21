@@ -16,13 +16,13 @@
 <!--        <toc-element topic="02-INFOMATE.md" />-->
 <!--        <toc-element topic="01-OSMAS.md" />-->
 <!--    </toc-element>-->
-    <toc-element toc-title="Personal-Project" sort-children="descending">
-        <toc-element topic="Hamony.md"/>
-        <toc-element topic="Kafka-MongoDB-INFOMATE.md"/>
-        <toc-element topic="Express-INFOMATE.md"/>
-        <toc-element topic="Alttuel.md"/>
-        <toc-element topic="CRM.md"/>
-    </toc-element>
+<!--    <toc-element toc-title="Personal-Project" sort-children="descending">-->
+<!--        <toc-element topic="Hamony.md"/>-->
+<!--        <toc-element topic="Kafka-MongoDB-INFOMATE.md"/>-->
+<!--        <toc-element topic="Express-INFOMATE.md"/>-->
+<!--        <toc-element topic="Alttuel.md"/>-->
+<!--        <toc-element topic="CRM.md"/>-->
+<!--    </toc-element>-->
     <toc-element toc-title="DevStudy" sort-children="descending">
         <toc-element toc-title="Base">
             <toc-element topic="Thread-Process.md"/>
