@@ -1,3 +1,0 @@
-# {SDFSFDF}
-
-Start typing here...
