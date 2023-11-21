@@ -34,5 +34,9 @@
         <description>Created after removal of "01. Class" from Portfolio</description>
         <accepts>01-Class.html</accepts>
     </rule>
+    <rule id="1944f601">
+        <description>Created after removal of "{" from Portfolio</description>
+        <accepts>dfsdfsf.html</accepts>
+    </rule>
 
 </rules>
