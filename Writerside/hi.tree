@@ -28,6 +28,10 @@
             <toc-element topic="12Factors.md"/>
             <toc-element topic="dv-Algrithm.md">
                 <toc-element topic="algorithm-Time-Complexity.md"/>
+                <toc-element topic="algorithmSearch.md">
+                    <toc-element topic="algorithm-graph-BFS.md"/>
+                    <toc-element topic="algorithm-graph-DFS.md"/>
+                </toc-element>
             </toc-element>
             <toc-element topic="Thread-Process.md"/>
             <toc-element topic="dev-base-Async-Non-Blocking.md"/>
@@ -56,8 +60,12 @@
                     </toc-element>
                 </toc-element>
                 <toc-element toc-title="Library" >
-                    <toc-element topic="java-library-Time.md"/>
-                    <toc-element topic="java-library-Queue.md"/>
+                    <toc-element topic="java-library-Basic.md">
+                        <toc-element topic="java-framework-ThreadLocal.md"/>
+                        <toc-element topic="java-library-basic-String.md"/>
+                        <toc-element topic="java-library-Queue.md"/>
+                        <toc-element topic="java-library-Time.md"/>
+                    </toc-element>
                     <toc-element toc-title="JPA">
                     </toc-element>
                     <toc-element topic="java_library_Quartz.md">

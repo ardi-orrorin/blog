@@ -38,5 +38,9 @@
         <description>Created after removal of "{" from Portfolio</description>
         <accepts>dfsdfsf.html</accepts>
     </rule>
+    <rule id="4faa1504">
+        <description>Created after removal of "Basic" from Portfolio</description>
+        <accepts>basic.html</accepts>
+    </rule>
 
 </rules>

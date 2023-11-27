@@ -1,3 +1,3 @@
-# Algorithm
+# Basic
 
 Start typing here...
