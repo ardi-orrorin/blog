@@ -54,6 +54,7 @@
                 </toc-element>
                 <toc-element toc-title="Framework">
                     <toc-element topic="java-framework-SpringCloud.md">
+                        <toc-element topic="java-framework-Gateway.md"/>
                         <toc-element topic="java-framework-Resilience4j.md"/>
                         <toc-element topic="java-framework-ServiceDiscovery.md"/>
                         <toc-element topic="java-framework-ConfigServer.md"/>
