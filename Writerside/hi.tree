@@ -7,10 +7,10 @@
 
     <toc-element toc-title="Profile">
         <toc-element topic="start.md"/>
-<!--        <toc-element topic="Education-Incomplited.md">-->
-<!--            <toc-element topic="23032309.md"/>-->
-<!--        </toc-element>-->
-<!--        <toc-element toc-title="Carrer"/>-->
+        <toc-element toc-title="Carrer">
+            <toc-element topic="23032309.md"/>
+            <toc-element topic="2023-12-01.md"/>
+        </toc-element>
     </toc-element>
 <!--    <toc-element toc-title="Team-Project" sort-children="descending">-->
 <!--        <toc-element topic="02-INFOMATE.md" />-->
