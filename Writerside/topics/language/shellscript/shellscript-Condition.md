@@ -1,4 +1,4 @@
-# 02.Condition
+# 02. Condition
 
 ## 1. if문
 ### 1-1. if문의 기본 구조
