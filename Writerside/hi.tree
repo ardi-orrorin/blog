@@ -126,6 +126,7 @@
                         </toc-element>
                     </toc-element>
                     <toc-element toc-title="ReactJs">
+                        <toc-element topic="javascript-framework-CustomHook.md"/>
                     </toc-element>
                     <toc-element toc-title="SvelteJS">
                     </toc-element>
@@ -152,6 +153,8 @@
             </toc-element>
             <toc-element toc-title="TypeScript">
                 <toc-element toc-title="Core" sort-children="ascending">
+                    <toc-element topic="typescript-09-TypeCompatibility.md"/>
+                    <toc-element topic="typescript-08-TypeGuard.md"/>
                     <toc-element topic="typescript_Types.md"/>
                     <toc-element topic="typescript_Union.md"/>
                     <toc-element topic="typescript_TypeAlias.md"/>
