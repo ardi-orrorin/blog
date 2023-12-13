@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Document</title>
+        <script crossorigin src='https://unpkg.com/react@18/umd/react.development.js'></script>
+        <script crossorigin src='https://unpkg.com/react-dom@18/umd/react-dom.development.js'></script>
+        <script src='https://unpkg.com/@babel/standalone/babel.min.js'></script>
+        <script src='https://unpkg.com/prop-types@15.6/prop-types.js'></script>
+    </head>
+    <body>
+        <div id='root'></div>
+        <script type='text/babel'>
+            const { useState, useMemo} = React;
+
+            const hardCalculator = (number) => {
+                console.log('어려운 계산');
+                for (let i = 0; i < 999999999; i++) {
+                    
+                }
+
+                return number + 10000;
+            }
+
+            const easyCalculator = (number) => {
+                console.log('쉬운 계산');
+
+                return number + 1;
+            }
+
+            const App = () => {
+                const [hardNumber, setHardNumber] = useState(1);
+                const [easyNumber, setEasyNumber] = useState(1);
+
+                const hardSum = useMemo(()=>{
+                    return hardCalculator(hardNumber);
+                },[hardNumber]); // [] 안에 변경를 감지할 변수를 입력
+
+                const easySum = useMemo(()=>{
+                    return easyCalculator(easyNumber);
+                },[easyNumber]);
+
+                return (
+                <>
+                    <h3>어려운 계산기</h3>
+                    <input 
+                        type="number" 
+                        value={ hardNumber}
+                        onChange={ e => setHardNumber(parseInt(e.target.value))}
+                    />
+                    <span>+ 10000 = { hardSum }</span>
+
+                    <h3>쉬운 계산기</h3>
+                    <input 
+                        type="number" 
+                        value={ easyNumber}
+                        onChange={ e => setEasyNumber(parseInt(e.target.value))}
+                    />
+                    <span>+ 1 = { easySum }</span>
+
+                </>
+            )}
+            ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+        </script>
+    </body>
+</html>
