@@ -126,6 +126,8 @@
                         </toc-element>
                     </toc-element>
                     <toc-element toc-title="ReactJs">
+                        <toc-element topic="useMemo.md"/>
+                        <toc-element topic="javascript-react-useCallback.md"/>
                         <toc-element topic="javascript-framework-CustomHook.md"/>
                     </toc-element>
                     <toc-element toc-title="SvelteJS">
