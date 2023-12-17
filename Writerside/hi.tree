@@ -353,6 +353,9 @@
             </toc-element>
         </toc-element>
         <toc-element toc-title="Other">
+            <toc-element topic="other-UML.md">
+                <toc-element topic="other-uml-ClassDiagram.md"/>
+            </toc-element>
         </toc-element>
         <toc-element toc-title="OS">
             <toc-element toc-title="Linux">
