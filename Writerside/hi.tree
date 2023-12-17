@@ -226,7 +226,12 @@
                 <toc-element toc-title="HTML">
                 </toc-element>
             </toc-element>
-        <toc-element topic="MarkDown.md"/>
+        <toc-element topic="MarkDown.md">
+            <toc-element topic="mardown-Mermaid.md">
+                <toc-element topic="markdown-mermaid-SequenceDiagram.md"/>
+                <toc-element topic="markdown-mermaid-Flowchart.md"/>
+            </toc-element>
+        </toc-element>
         <toc-element toc-title="ShellScript">
             <toc-element topic="shellscript-Condition.md"/>
             <toc-element topic="shellscript-01-variable.md"/>
