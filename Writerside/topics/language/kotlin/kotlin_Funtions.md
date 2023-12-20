@@ -1,8 +1,26 @@
 # 08. Funtions
 
 ## Function
-<code-block src="/Language/kotlin/08_Funtions/Funtons.kt" lang="kotlin"/>
+
+```Kotlin
+```
+{src="/Language/kotlin/08_Funtions/Funtons.kt"}
 
 ## Extension Function
-<code-block src="/Language/kotlin/08_Funtions/ExtesionFunc.kt" lang="kotlin"/>
 
+```Kotlin
+```
+{src="/Language/kotlin/08_Funtions/ExtesionFunc.kt"}
+
+
+## Lamda
+
+```Kotlin
+```
+{src="/Language/kotlin/08_Funtions/Lamda.kt"}
+
+## Operator Overloading
+
+```Kotlin
+```
+{src="/Language/kotlin/08_Funtions/OperatorOverloading.kt"}
