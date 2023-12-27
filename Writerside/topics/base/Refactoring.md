@@ -1,4 +1,4 @@
-# Refactoring(작성중)
+# Refactoring
 
 ## 1. 작명(Mysterious Name)
 - 함수, 변수, 클래스, 패키지, 소스 파일 등의 이름을 지을 때는 그 목적을 쉽게 이해할 수 있도록 지어야 한다.

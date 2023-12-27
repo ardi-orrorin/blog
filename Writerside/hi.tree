@@ -90,9 +90,12 @@
             </toc-element>
             <toc-element toc-title="JavaScript">
                 <toc-element toc-title="Core">
+                    <toc-element topic="javascript-core-Promise.md"/>
+                    <toc-element topic="jvascript-core-Generator.md"/>
                     <toc-element topic="javascript-core-for-Loop.md"/>
                 </toc-element>
                 <toc-element toc-title="Sample">
+                    <toc-element topic="javascript-sample-Debounce-Axios.md"/>
                     <toc-element topic="javascript-sample-Carousel.md"/>
                     <toc-element topic="javascript-sample-Drag-Drop.md"/>
                     <toc-element topic="javascript_example_inputFileImagePreview.md"/>
