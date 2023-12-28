@@ -90,6 +90,7 @@
             </toc-element>
             <toc-element toc-title="JavaScript">
                 <toc-element toc-title="Core">
+                    <toc-element topic="javascript-core-Micro-MacroTask-Queue.md"/>
                     <toc-element topic="javascript-core-Promise.md"/>
                     <toc-element topic="jvascript-core-Generator.md"/>
                     <toc-element topic="javascript-core-for-Loop.md"/>
@@ -305,6 +306,7 @@
             </toc-element>
             <toc-element toc-title="git">
                 <toc-element topic="devops-git-Basic.md"/>
+                <toc-element topic="devops-git-Branch.md"/>
                 <toc-element topic="git_Filter.md"/>
             </toc-element>
             <toc-element toc-title="Docker" sort-children="ascending">
