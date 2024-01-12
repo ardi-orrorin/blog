@@ -65,6 +65,7 @@
                     </toc-element>
                     <toc-element topic="java-framework-SpringSecurity.md"/>
                     <toc-element toc-title="Spring">
+                        <toc-element topic="DevTools.md"/>
                         <toc-element topic="java-framework-spring-Deployment-Descritor.md"/>
                         <toc-element topic="java-framework-spring-Servlet.md"/>
                     </toc-element>
