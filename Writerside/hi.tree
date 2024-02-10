@@ -48,6 +48,7 @@
                 <toc-element topic="DisignPattern-MVVM.md"/>
                 <toc-element topic="DesignPattern-MVC.md"/>
                 <toc-element topic="DesignPattern-MVC2.md"/>
+                <toc-element topic="VIPER.md"/>
             </toc-element>
         </toc-element>
         <toc-element toc-title="Language">
