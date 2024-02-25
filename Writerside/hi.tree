@@ -81,6 +81,8 @@
                         <toc-element topic="java-library-Time.md"/>
                     </toc-element>
                     <toc-element toc-title="MyBatis">
+                        <toc-element topic="mybatis-foreach.md"/>
+                        <toc-element topic="mybatis-where.md"/>
                         <toc-element topic="mybatis-include.md"/>
                         <toc-element topic="Difference_parameter.md"/>
                     </toc-element>
