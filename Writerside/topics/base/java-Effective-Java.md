@@ -148,6 +148,11 @@ public class Elvis {
 - 단점
   - 만들어진 인스턴스가 전체 시스템에서 하나뿐임이 보장되지 않는다.
   - accessibleObject.setAccessible을 사용하면 private 생성자를 호출할 수 있다.
+  - 리플렉션을 통해 private 생성자를 호출할 수 있다.
+  
+> 리플렉션이란, 구체적인 클래스 타입을 알지 못하더라고 그 클래스의 메서드, 타입, 변수들에 접근 할 수 있도록 해주는 자바 API,  
+> 주로 Spring프레밍워크의 어노테이션 같은 기능들이 리플렉션을 이용하여 실행 도중 동적으로 클래스의 정보를 가져와서 사용한다.
+
 
 4. 정적 팩토리 방식
 ```Java
@@ -171,3 +176,37 @@ public enum Elvis {
 - public 필드 방식과 비슷하지만 더 간결하고, 추가 노력 없이 직렬화 할 수 있다.
 - 싱글턴을 만드는 방법 중 가장 좋은 방법이다.
 - 하지만 만들려는 싱글턴이 Enum 외의 클래스를 상속해야 한다면 이 방법은 사용할 수 없다.
+
+## 4. 인스턴스화를 막으려거든 private 생성자를 사용하라
+- 추상 클래스로 만드는 것은 인스턴스화를 막을 수 없다.
+- 하위 클래스를 만들어서 인스턴스화하면 그만이기 때문이다.
+- 컴파일러가 기본 생성자를 만드는 경우는 오직 명시된 생성자가 없을 때분이니 private 생성자를 추가하면 클래스의 인스턴스화를 막을 수 있다.
+- 명시적 생성자가 private이니 클래스 바깥에서 접근할 수 없다.
+- 꼭 AssertionError 에러를 던질 필요는 없지만, 클래스 안에서 실수로라도 생성자를 호출하지 않도록 해준다.
+
+```Java
+public class UtilityClass {
+  private UtilityClass() { //기본 생성자가 만들어지는 것을 막는다.
+    throw new AssertionError();
+  }
+}  
+```
+
+## 5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라
+- 의존 객체 주입이란 클래스가 사용하는 자원을 직접 만들어 사용하는 것이 아니라 외부에서 주입받는 것을 말한다.
+- 의존 객체 주입은 클래스의 유연성, 재사용성, 테스트 용이성을 높여준다.
+- 의존 객체 주입은 생성자, 정적 팩터리, 빌더 모두에 응용할 수 있다.
+- 팰토리 메서드 패턴의 경우 하위 클래스에서 구현체를 제공할 수 있다.
+
+```Java
+public class SpellChecker {
+  private final Lexicon dictionary;
+  public SpellChecker(Lexicon dictionary) {
+    this.dictionary = Objects.requireNonNull(dictionary);
+  }
+  public boolean isValid(String word) { ... }
+  public List<String> suggestions(String typo) { ... }
+}
+```
+
+
