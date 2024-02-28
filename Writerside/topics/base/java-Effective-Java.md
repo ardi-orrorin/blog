@@ -131,3 +131,43 @@ public class NutritionFacts {
 }
 
 ```
+
+## 3. private 생성자나 열거 타입으로 싱글턴임을 보증하라.
+1. 싱글턴 패턴이란 인스턴스를 오직 하나만 생성할 수 있는 클래스를 말한다.
+2. 싱글턴을 만드는 방법은 두가지가 있다.
+   - public static final 필드 방식
+   - 정적 팩토리 방식
+
+3. public static final 필드 방식
+```Java
+public class Elvis {
+  public static final Elvis INSTANCE = new Elvis();
+  private Elvis() {}
+}
+ ```
+- 단점
+  - 만들어진 인스턴스가 전체 시스템에서 하나뿐임이 보장되지 않는다.
+  - accessibleObject.setAccessible을 사용하면 private 생성자를 호출할 수 있다.
+
+4. 정적 팩토리 방식
+```Java
+public class Elvis {
+  private static final Elvis INSTANCE = new Elvis();
+  private Elvis() {}
+  public static Elvis getInstance() { return INSTANCE; }
+}
+```
+- getInstance 메서드를 호출할 때마다 같은 객체를 반환하므로 싱글턴이 보장된다.
+- 메서드를 통해 명시적으로 싱글턴입을 알 수 있다.
+- 개발자에 따라 마음만 먹으면 싱글턴이 아니게도 쉽게 수정 할 수 있다.
+
+5. 열거 타입 방식
+```Java
+public enum Elvis {
+  INSTANCE;
+  public void leaveTheBuilding() { ... }
+}
+```
+- public 필드 방식과 비슷하지만 더 간결하고, 추가 노력 없이 직렬화 할 수 있다.
+- 싱글턴을 만드는 방법 중 가장 좋은 방법이다.
+- 하지만 만들려는 싱글턴이 Enum 외의 클래스를 상속해야 한다면 이 방법은 사용할 수 없다.
