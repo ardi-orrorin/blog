@@ -209,4 +209,28 @@ public class SpellChecker {
 }
 ```
 
+## 6. 불필요한 객체 생성을 피하라.
+- 똑같은 기능의 객체를 매번 생성하기보다는 객체 하나를 재사용 하는 편이 나을 때가 많다.
+
+Example
+```Java
+// 내부에서 만드는 Pattern 객체는 한 번 사용후 CG가 되어버려서 성능이 낭비가 된다.
+static boolean isRomanNumeral(String s) {
+  return s.matches("^(?=.)M*(C[MD]|D?C{0,3})"
+      + "(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$");
+   
+   
+// Pattern 객체를 클래스 초기화 과정에서 직접 생성해 캐싱해두고 나중에 사용할 때마다 재사용한다.   
+public class RomanNumerals {
+  private static final Pattern ROMAN = Pattern.compile(
+      "^(?=.)M*(C[MD]|D?C{0,3})"
+      + "(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$");
+  static boolean isRomanNumeral(String s) {
+    return ROMAN.matcher(s).matches();
+  }
+}
+
+
+```
+
 
