@@ -229,8 +229,43 @@ public class RomanNumerals {
     return ROMAN.matcher(s).matches();
   }
 }
-
-
 ```
+
+## 7. 다 쓴 객체 참조를 해제하라
+- 배열 및 리스트의 원소를 다 쓴 뒤라도 GC 에서 자원이 회수하지 않는다.
+- 이러한 객체를 참조하고 있는 객체들도 GC가 회수하지 않는다.
+- 해당 참조를 다 썻다면 null 처리하여 GC가 회수할 수 있도록 해야한다.
+- null 처리는 예외적인 경우여야하고, 가급전 scope 밖으로 밀어내는 것이 좋다.
+- WeakHashMap을 사용하여 키가 가비지 컬렉션 될 때마다 자동으로 제거되는 맵을 만들 수 있다.
+
+```Java
+public class Stack {
+  private Object[] elements;
+  private int size = 0;
+  private static final int DEFAULT_INITIAL_CAPACITY = 16;
+  public Stack() {
+    elements = new Object[DEFAULT_INITIAL_CAPACITY];
+  }
+  public void push(Object e) {
+    ensureCapacity();
+    elements[size++] = e;
+  }
+  public Object pop() {
+    if (size == 0)
+      throw new EmptyStackException();
+    return elements[--size]; // 배열의 사이즈는 줄어 들지만 참조된 객체들은 GC가 되지않아 메모리 누수가 발생한다.
+  }
+  /**
+   * 원소를 위한 공간을 적어도 하나 이상 확보한다.
+   * 배열 크기를 늘려야 할 때마다 대략 두 배씩 늘린다.
+   */
+  private void ensureCapacity() {
+    if (elements.length == size)
+      elements = Arrays.copyOf(elements, 2 * size + 1);
+  }
+} 
+```
+
+
 
 
