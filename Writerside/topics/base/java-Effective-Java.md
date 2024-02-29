@@ -266,6 +266,35 @@ public class Stack {
 } 
 ```
 
+## 8. finalizer와 cleaner 사용을 피하라
+
+
+## 9. try-with-resources를 사용하라
+- 자바 라이브러리에는 close 메서드를 호출해 직접 닫아줘야 하는 자원이 많다.
+- try-finally로 자원을 닫아주는 것은 불편하고, 중첩되는 경우 finally 하위 블록에는 예외처리가 생략되어 close되지 않을 가능성이 있다. 
+- try-with-resources를 사용할 수 있는데, 사용하기 위해서는 해당 자원이 AutoCloseable 인터페이스를 구현해야 한다.
+- try-with-resources를 사용하면 자원을 명시적으로 닫아주지 않아도 된다.
+
+```Java
+// try-finally를 사용한 자원 닫기
+static String firstLineOfFile(String path) throws IOException {
+  BufferedReader br = new BufferedReader(new FileReader(path));
+    try {
+        return br.readLine();
+    } finally {
+      br.close();
+    }
+}
+
+// try-with-resources를 사용한 자원 닫기
+static String firstLineOfFile(String path) throws IOException {
+  try (
+    BufferedReader br = new BufferedReader(new FileReader(path))
+  ) {
+    return br.readLine();
+  }
+}
+```
 
 
 
