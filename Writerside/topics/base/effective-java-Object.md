@@ -81,3 +81,88 @@ private int hashCode; // 자동으로 0으로 초기화 된다.
 - hashCode가 반환하는 값의 생성 규칙을 API사용장게 자세히 공표하지 말아야한다.
 - 그래야 클라이언트가 이 값에 의지 하지않게 되고, 추후에 계산 방식을 바꿀 수 도 있다.
 
+## 3. toString을 항상 재정의하라.
+- 실전에서는 toString은 그 객체가 가진 주요 정보를 모두 반환하는 것이 좋다.
+- 포맷을 명시하든 아니든 의도를 명확히 밝혀야 한다.
+- 포맷 명시 여부와 상관없이 toString 반환한 값에 포함된 정보를 얻어올 수 있는 API를 제공하는 것이 좋다.
+
+## 4. clone 재정의는 주의해서 진행하라.
+- Cloneable은 복제해도 되는 클래스임을 명시하는 용도의 믹스인 인터페이스이다.
+
+> Mixin : 클래스가 다른 클래스의 부분을 재사용하는 방법 중 하나로, 다중 상속을 지원하지 않는 언어에서 클래스에 다른 클래스의 기능을 추가하기 위한 방법이다.
+
+- Clone 메서드의 규약사항
+  - x.clone() != x
+  - x.clone().getClass() == x.getClass() // 항상 만족해야 하는 조건은 아니다.
+  - x.clone().equals(x)
+  - 관례상 반환된 객체와 원본 객체는 독립적이어야한다. super.clone을 오더은 객체의 필드 중 하나 이상의을 반환하기 전에 수정해야 할 수도 있다.
+
+```Java
+@Override public PhoneNumber clone() {
+  try {
+    return (PhoneNumber) super.clone();
+  } catch (CloneNotSupportedException e) {
+    throw new AssertionError(); // 일어날 수 없는 일이다.
+  }
+}
+```
+
+Example
+```Java
+public class Stack {
+  private Object[] elements;
+  private int size = 0;
+  private static final int DEFAULT_INITIAL_CAPACITY = 16;
+
+  public Stack() {
+    elements = new Object[DEFAULT_INITIAL_CAPACITY];
+  }
+
+  public void push(Object e) {
+    ensureCapacity();
+    elements[size++] = e;
+  }
+
+  public Object pop() {
+    if (size == 0) {
+      throw new EmptyStackException();
+    }
+    Object result = elements[--size];
+    elements[size] = null; // 다 쓴 참조 해제
+    return result;
+  }
+
+  // 원소를 위한 공간을 적어도 하나 이상 확보한다.
+  private void ensureCapacity() {
+    if (elements.length == size) {
+      elements = Arrays.copyOf(elements, 2 * size + 1);
+    }
+  }
+
+  // clone 메서드를 사용하여 복제한다.
+  @Override public Stack clone() {
+    try {
+      Stack result = (Stack) super.clone();
+      result.elements = elements.clone();
+      return result;
+    } catch (CloneNotSupportedException e) {
+      throw new AssertionError();
+    }
+  }
+}
+```
+
+- clone 메서드는 생성자와 같은 효과를 낸다.
+- 그러므로 본 객체에 아무런 영향이 없어야 하는 불변식을 보장해야 한다.
+
+## 5. Comparable을 구현할지 고려하라.
+- compareTo 메서드 규약사항
+  - 주어진 객체보다 작으면 음의 정수, 크면 양의 정수를 반환한다.
+  - 비교할 수 없는 타입의 객체가 주입되면 ClassCastException을 던진다.
+  - sgn(x.compareTo(y) == -sgn(y.compareTo(x))를 만족해야 한다.
+  - 추이성을 보장해야한다. (x.compareTo(y) > 0 && y.compareTo(z) > 0 이면 x.compareTo(z) > 0)
+  - Comparable을 구현한 클래스는 모든 z에 대해 x.compareTo(y) == 0 이면 x.equals(y)이다.
+  - (x.compareTo(y) == 0) == (x.equals(y)) 이여야 하지만 꼭 지켜야하는 필수사항은 아니다.
+  - 주의: 이 클래스의 순서는 equals 메서드와 일관되지 않는다.
+- 컬렉션을 구현한 인터페이스(Collection, Set, List, Map, Queue, Deque)는 equals의 규약을 따른다고 되어있지만, 정렬된 컬렉션은 동치성을 비교할 때 CompareTo를 사용하기 때문에 주의해야 한다.
+- 
