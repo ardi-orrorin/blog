@@ -75,4 +75,97 @@ public final class Time {
 - 상속용으로 설계한 클래스는 배포 전에 반드시 하위 클래스를 만들어 검증해야 한다.
 - 상속용 클래스의 생성자는 직접적으로든 간접적으로든 재정의 가능 메서드를 호출해서는 안된다.
 - 상속용으로 설계한 클래스는 Cloneable과 Serializable을 구현하지 않는 것이 좋다.
-- 
+
+## 6. 추상 클래스보다는 인터페이스를 우선하라.
+- 추상클래스를 상속하는 경우 추상클래스 하위에 존재해야 하며, 한 번에 하나의 클래스만 상속받을 수 있다
+- 인터페이스로 계층구조가 없는 ㅌ아비 프레임워크를 만들 수 있다.
+- 인터페이스는 기능을 향상 시키고 안전하고 강력한 수단이 된다.
+
+## 7. 인터페이스는 구현하는 쪽을 생각해 설계하라.
+- default 메서드는(컴파일에 성공하더라도) 기존 구현제체 런타임 오류를 일으킬 수 있다.
+- 인터페이스를 릴리스한 후라도 결함을 수정하는 게 가능한 경우도 있겠지만, 절대 그 가능성에 기대서는 안된다.
+
+## 8. 인터페이스는 타입을 정의하는 용도로만 사용하라.
+
+
+## 9. 태그 달린 클래스보다는 클래스 계층구조를 활용
+- 태그 달린 클래스느 ㄴ장황하고 , 오류를 내기 쉽고 비효율적이다.
+- 태그 달린 클래스는 클래스 계층 구조를 어설프게 흉내낸 구조에 불구하다.
+
+Example
+```Java
+// 태그 달린 클래스 - 클래스 계층구조보다 훨씬 나쁘다.
+class Figure {
+    enum Shape { RECTANGLE, CIRCLE };
+
+    // 태그 필드 - 현재 모양을 나타낸다.
+    final Shape shape;
+
+    // 모양이 사각형일 때만 사용하는 필드
+    double length;
+    double width;
+
+    // 모양이 원일 때만 사용하는 필드
+    double radius;
+
+    // 원용 생성자
+    Figure(double radius) {
+        shape = Shape.CIRCLE;
+        this.radius = radius;
+    }
+
+    // 사각형용 생성자
+    Figure(double length, double width) {
+        shape = Shape.RECTANGLE;
+        this.length = length;
+        this.width = width;
+    }
+
+    double area() {
+        switch (shape) {
+            case RECTANGLE:
+                return length * width;
+            case CIRCLE:
+                return Math.PI * (radius * radius);
+            default:
+                throw new AssertionError();
+        }
+    }
+}
+```
+
+```Java
+// 클래스 계층구조를 활용한 클래스
+abstract class Figure { // 팩토리 메서드 패턴
+    abstract double area();
+}
+
+class Circle extends Figure {
+    final double radius;
+
+    Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    double area() {
+        return Math.PI * (radius * radius);
+    }
+}
+
+class Rectangle extends Figure {
+    final double length;
+    final double width;
+
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    double area() {
+        return length * width;
+    }
+}
+
+```
