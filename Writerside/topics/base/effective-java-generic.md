@@ -60,3 +60,35 @@ Object[] objects = stringLists; // 컴파일 에러
 objects[0] = intList; // 런타임 에러
 String s = stringLists[0].get(0); // ClassCastException 발생
 ```
+
+## 4. 이왕이면 제네릭 타입으로 만들라
+- 제네릭 타입으로 만들면 클라이언트 코드에서 형변환을 하지 않아도 된다.
+- 단 배열을 사용 하는 경우 제네릭 타입으로 만들 수 없다. (배열은 공변이기 때문에 런타임에 타입 안전성을 보장할 수 없다.)
+
+## 5. 이왕이면 제네릭 메서드로 만들라.
+
+
+## 6. 한정적 와일드카드를 사용해 API 유연성을 높이라.
+- PECS(Producer-Extends, Consumer-Super) 원칙
+  - 원소를 생산할 생산자라면 <? extends E>
+  - 원소를 소비할 소비자라면 <? super E>
+
+
+## 7. 제네릭과 가변인수를 함께 쓸 때는 신중하라.
+
+
+## 8. 타입 안전 이종 컨테이너를 고려하라.
+```Java
+// 타입 안전 이종 컨테이너 패턴
+public class Favorites {
+  private Map<Class<?>, Object> favorites = new HashMap<>();
+
+  public <T> void putFavorite(Class<T> type, T instance) {
+    favorites.put(Objects.requireNonNull(type), instance);
+  }
+
+  public <T> T getFavorite(Class<T> type) {
+    return type.cast(favorites.get(type));
+  }
+}
+```
