@@ -26,6 +26,7 @@
     <toc-element toc-title="DevStudy" sort-children="descending">
         <toc-element toc-title="Base">
             <toc-element topic="java-Effective-Java.md">
+                <toc-element topic="effective-java-generic.md"/>
                 <toc-element topic="effective-java-class-interface.md"/>
                 <toc-element topic="effective-java-con-des.md"/>
                 <toc-element topic="effective-java-Object.md"/>
