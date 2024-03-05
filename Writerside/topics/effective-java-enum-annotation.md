@@ -41,3 +41,86 @@ public enum Planet {
 
 - 위 예제 중 열거 타입 상수를 하나 제거 한다면?, 삭제한 열거 타입을 사용중인 코드에서는 컴파일 오류가 발생한다. 이는 열거 타입이 타입 안전성을 제공하기 때문이다.
 - 열거 타입에 정의된 상수 개수가 영원히 고정 불변일 필요는 없다.
+
+## 2. ordinal 메서드 대신 인스턴스 필드를 사용하라.
+- ordinal 메서드는 열거 타입 상수가 선언된 순서를 반환한다.
+- 상수의 순서가 바뀌면 ordinal 메서드가 반환하는 값도 바뀌기 때문에 ordinal 메서드는 사용하지 않는 것이 좋다.
+- 대신 열거 타입 산수에 연결된 값을 필드에 저장하자.
+
+```Java
+public enum Ensemble {
+    SOLO(1), DUET(2), TRIO(3), QUARTET(4), QUINTET(5), SEXTET(6), SEPTET(7), OCTET(8), DOUBLE_QUARTET(8), NONET(9), DECTET(10);
+    
+    private final int numberOfMusicians;
+    
+    Ensemble(int size) { this.numberOfMusicians = size; }
+    public int numberOfMusicians() { return numberOfMusicians; }
+}
+```
+
+## 3. 비트 필드 대신 EnumSet을 사용하라.
+- 비트 필드는 열거 타입 상수의 집합을 표현할 때 사용한다.
+- EnumSet 클래스는 열거 타입 상수의 집합을 효과적으로 표현할 수 있다.
+- EnumSet 클래스는 Set 인터페이스를 구현하며, 열거 타입 상수의 값들을 비트 벡터로 표현한다.
+- 원소가  64개 이하일 경우 EnumSet 전체를 long 변수 하나로 표현하여 비트 필드에 비견되는 성능을 보여준다.
+
+
+```Java
+//비트 필드란
+public class Text {
+    public static final int STYLE_BOLD = 1 << 0; // 1
+    public static final int STYLE_ITALIC = 1 << 1; // 2
+    public static final int STYLE_UNDERLINE = 1 << 2; // 4
+    public static final int STYLE_STRIKETHROUGH = 1 << 3; // 8
+    
+    public void applyStyles(int styles) {
+        // ...
+    }
+}
+```
+
+```Java
+public class Text {
+    public enum Style { BOLD, ITALIC, UNDERLINE, STRIKETHROUGH }
+    
+    public void applyStyles(Set<Style> styles) {
+        // ...
+    }
+}
+    
+text.applyStyles(EnumSet.of(Style.BOLD, Style.ITALIC));
+```
+
+## 4. ordinal 인덱싱 대신 EnumMap을 사용하라.
+
+
+## 5. 확장할 수 있는 열거 타입이 필요하면 인터페이스를 사용하라.
+- 타입 안전 열거 패턴은 확장할 수 없으나 열거 타입은 그럴 수 없다.
+
+```Java
+public interface Operation {
+    double apply(double x, double y);
+}
+
+public enum BasicOperation implements Operation {
+    PLUS("+") {
+        public double apply(double x, double y) { return x + y; }
+    },
+    MINUS("-") {
+        public double apply(double x, double y) { return x - y; }
+    },
+    TIMES("*") {
+        public double apply(double x, double y) { return x * y; }
+    },
+    DIVIDE("/") {
+        public double apply(double x, double y) { return x / y; }
+    };
+    
+    private final String symbol;
+    
+    BasicOperation(String symbol) { this.symbol = symbol; }
+    
+    @Override
+    public String toString() { return symbol; }
+}
+```
