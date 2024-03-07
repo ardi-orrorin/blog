@@ -67,4 +67,30 @@ Function<String, Integer> stringToInteger = Integer::parseInt;
 | 클래스 생성자 | TreeMap<K,V>::new | () -> new TreeMap<K,V>() |
 | 배열 생성자 | int[]::new | len -> new int\[len] |
 
+## 3. 표준 함수형 인터페이스를 사용하라.
+- Predicate, Function, Supplier, Consumer, UnaryOperator, BinaryOperator 등의 인터페이스를 사용하라.
+- 필요한 용도에 만즌ㄴ 게 있다면 ,직접 구현하지 말고 표준 함수형 인터페이스를 활용하라.
+- 기본 함수형 인터페이스에 박싱된 기본 타입을 넣어 사용하지는 말자
+- 직접 만든 함수형 인터페이스는 @FunctionalInterface 애너테이션을 사용하자.
+- 
+
+```Java
+@FunctionalInterface interface ElFunction<T> {
+    T apply(T arg1, T arg2);
+}
+
+```
+기본 함수형 인터페이스 테이블
+
+| 인터페이스               | 함수 시그니처 | 예 |
+|---------------------| --- | --- |
+| UnaryOperator\<T>   | T apply(T t) | String::toLowerCase |
+| BinaryOperator\<T>  | T apply(T t1, T t2) | BigInteger::add |
+| Predicate\<T>       | boolean test(T t) | Collection::isEmpty |
+| Function<T, R>      | R apply(T t) | Arrays::asList |
+| Supplier\<T>        | T get() | Instant::now |
+| Consumer\<T>        | void accept(T t) | System.out::println |
+| BiFunction<T, U, R> | R apply(T t, U u) | String::concat |
+| BiPredicate<T, U>   | boolean test(T t, U u) | String::equals |
+| BiConsumer<T, U>    | void accept(T t, U u) | Map::put |
 
