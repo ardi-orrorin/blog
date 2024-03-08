@@ -31,6 +31,7 @@
     <toc-element toc-title="DevStudy" sort-children="descending">
         <toc-element toc-title="Base">
             <toc-element topic="java-Effective-Java.md">
+                <toc-element topic="effective-java-method.md"/>
                 <toc-element topic="effective-java-lamda-stream.md"/>
                 <toc-element topic="effective-java-enum-annotation.md"/>
                 <toc-element topic="effective-java-generic.md"/>
