@@ -235,3 +235,7 @@ public static <E extends Comparable<E>> Optional<E> max(Collection<E> c) {
     return Optional.of(result);
 }
 ```
+
+## 8. 공개된 API 요소에는 항상 문서화 주석을 작성하라.
+- 공개된 클래스, 인터페이스, 메서드, 필드에는 항상 문서화 주석을 작성하자.
+- 문서화 주석은 API 사용자에게 어떻게 사용해야 하는지 설명한다.
