@@ -49,14 +49,23 @@ String compoundKey = className + "#" + i.next();
 ## 7. 문자열 연결은 누리지 주의하라.
 - 문자열 연결 연산자(+)로 문자열 n개를 잇는 시간은 n^2에 비례한다.
 - 성능을 포기하고 싶지 않다면 String 대신 StringBuilder를 사용하자.
+- 연산 성능 : StringBuilder > StringBuffer > String
+- 멀티스레드 환경에서는 StringBuffer를 사용하자.
+- StringBuilder는 단일 스레드 환경에서 사용하자.
+- String은 짧은 문자열을 연결할 때만 사용하자.
+- String은 불변이기 때문에 a += aValue 값이 바뀔 때마다 새로운 String 객체를 생성한다.
+- 이는 새로운 객체 a를 생성 후 이전의 필요없어진 a객체를 GC 처리하게 되면서 CPU를 사용하게 된다.
+- 그에 반해 StringBuffer와 StringBuilder는 가변이기 때문에 새로운 객체를 생성하지 않고 기존 객체를 수정한다.
+- 다만, JDK 5부터는 컴파일러가 자동으로 StringBuilder로 변환해준다.
+- 그렇지만 반복문 같은 경우는 따로 컴퍼라일러에서 변환해주지 않기 때문에 직접 StringBuilder를 사용해야 한다.
 
-> 연산 성능 : StringBuilder > StringBuffer > String
-
-> 멀티스레드 환경에서는 StringBuffer를 사용하자.
-
-> StringBuilder는 단일 스레드 환경에서 사용하자.
-
-> String은 짧은 문자열을 연결할 때만 사용하자.
+```Java
+// JDK 5부터는 컴파일러가 자동으로 StringBuilder로 변환해준다.
+str = "a" + "b" + "c" + "d";
+// 위 코드는 아래 코드로 변환된다.
+str = new StringBuilder().append("a").append("b").append("c").append("d").toString();
+```
+ 
 
 ## 8. 객체는 인터페이스를 사용해 참조하라.
 - 적합한 인터페이스만 있담녀 매개변수뿐 아니라 반환값, 변수, 필드를 전부 인터페이스 타입으로 선언한다.
