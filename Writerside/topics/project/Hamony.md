@@ -95,6 +95,6 @@
         <a href="https://www.erdcloud.com/d/FBcpwDQxviNr93FA4">ERD Cloud</a>
     </category>
     <category ref="git">
-        <a href="https://github.com/yoosc89/hamony">Hamony</a>
+        <a href="https://github.com/ardi-orrorin/hamony">Hamony</a>
     </category>
 </seealso>

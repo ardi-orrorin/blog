@@ -17,6 +17,7 @@
         <toc-element topic="01-OSMAS.md" />
     </toc-element>
     <toc-element toc-title="Personal-Project" sort-children="descending">
+        <toc-element topic="project-Anamensis.md"/>
         <toc-element topic="Hamony.md"/>
         <toc-element topic="Kafka-MongoDB-INFOMATE.md"/>
         <toc-element topic="Express-INFOMATE.md"/>
