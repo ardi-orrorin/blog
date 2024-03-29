@@ -1,4 +1,4 @@
-# Anamensis(업데이트 중...)
+# Anamensis(진행중...)
 
 ## Introduce
 
@@ -41,7 +41,7 @@
 
 
 ## ERD
-![](anamensis-erd.jpg)
+![](anamensis-erd.jpg){thumbnail="true"}
 
 <seealso>
     <category ref="erdcloud">
