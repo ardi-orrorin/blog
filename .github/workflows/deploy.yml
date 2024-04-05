@@ -78,7 +78,7 @@ jobs:
 #                2>&1 | tee algolia-update-index-log.txt
 
     test:
-        needs: publish-indexes
+        needs: build
         runs-on: ubuntu-latest
 
         steps:
