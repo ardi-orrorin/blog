@@ -41,7 +41,7 @@
 
 
 ## ERD
-![](anamensis-erd.jpg){thumbnail="true"}
+![](anamensis-erd.png){thumbnail="true"}
 
 <seealso>
     <category ref="erdcloud">
