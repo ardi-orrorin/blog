@@ -38,18 +38,7 @@ INFOMATE 프로젝트에서 채팅와 알림 서비스를 추가로 제작한 �
     </tab>
 </tabs>
 
-
-## 4.  Chatting Server Logic Diagram
-
-![diagram](https://github.com/yoosc89/INFOMATE_Kafka_MongoDB/blob/main/src/main/resources/static/logo/diagram.jpg?raw=true){thumbnail="true"}
-
-## 5. Calendar Notification Server Logic Diagram
-
-![diagram](https://github.com/yoosc89/INFOMATE_Kafka_MongoDB/blob/main/src/main/resources/static/logo/calendarNotification.jpg?raw=true){thumbnail="true"}
-
-
-
-## 6. View
+## 4. View
 ![](01kafkaMongoDBInfomate.jpg){thumbnail="true"}
 
 ![](02kafkaMongoDBInfomate.jpg){thumbnail="true"}
