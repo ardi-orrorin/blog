@@ -45,6 +45,7 @@
 
 
 ## CodeReview
+
 ### 1. 사용자 api 호출 로그 저장 필터
 
 [GitHub Source Link](https://github.com/ardi-orrorin/anamensis/blob/main/server/src/main/java/com/anamensis/server/config/LogHistoryFilter.java)
@@ -54,8 +55,6 @@
 ![](anamensis-codereview-filter-02.jpg){thumbnail="true"  style="block"}
 
 ![](anamensis-codereview-filter-03.jpg){thumbnail="true"  style="block"}
-
-
 
 <seealso>
     <category ref="erdcloud">

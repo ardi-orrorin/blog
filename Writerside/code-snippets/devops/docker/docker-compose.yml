@@ -10,3 +10,79 @@ services:
 networks:
     app-network:
         driver: bridge
+
+services:
+  anamensis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        JAR: *.jar
+    image: image:latest
+    networks:
+      - net
+    ports:
+      - "${PORT}:8080"
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1
+        failure_action: rollback
+        monitor: 60s
+        delay: 10s
+        order: start-first
+      rollback_config:
+        delay: 0s
+        parallelism: 1
+        failure_action: continue
+        order: start-first
+    healthcheck:
+      test: "curl http://localhost:8080/actuator/health | grep UP || exit 1"
+      interval: 60s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: on-failure
+
+services:
+  anamensis:
+    networks:
+      - net
+    ports:
+      - "7078:8080"
+networks:
+  net:
+    driver: overlay
+
+services:
+  anamensis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        JAR: server-anamensis-0.0.1
+    image: anamensis:0.0.1
+
+services:
+  anamensis:
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1 // 동시에 교체할 컨테이너 수
+        failure_action: rollback // 실패 시 컨테이너 진행 방법
+        monitor: 60s // 업데이트 후 성공여부 모니터링 시간
+        delay: 10s // 컨테이너 교체 사이의 딜레이
+        order: start-first // 컨테이너 교체 순서
+      rollback_config:
+        delay: 0s // 롤백 딜레이
+        parallelism: 1 // 롤백 동시에 진행할 컨테이너 수
+        failure_action: continue // 롤백 실패 시 진행 방법
+        order: start-first  // 롤백 순서
+    healthcheck:
+      test: "curl http://localhost:8080/actuator/health | grep UP || exit 1"
+      interval: 60s // 헬스체크 주기
+      timeout: 5s // 헬스체크 타임아웃
+      retries: 3 // 헬스체크 재시도 횟수
+      start_period: 10s // 헬스체크 시작 시간
+    restart: on-failure // 실패 시 재시작
+
