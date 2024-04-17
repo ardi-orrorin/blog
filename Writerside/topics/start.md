@@ -4,6 +4,8 @@
 꾸준히 공부해 성장하고 싶은 백엔드 개발자 유승철입니다.  
 클린 코드 및 기술의 최적화에 관심이 많고, 먼 미래에 운영까지 포함하여 devops까지 경험해보고 싶습니다.  
 
+![](github-last-year.jpg)
+> Update Date : 2024-04-17
 
 ## 1. 기술 스택 & 경험
 - RDBMS : Oracle, Mysql(MariaDB), PostgreSQL, MongoDB, Redis
