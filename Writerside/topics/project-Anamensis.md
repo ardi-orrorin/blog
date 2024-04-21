@@ -1,4 +1,4 @@
-# Anamensis(진행중...)
+# Anamensis(작업중...)
 
 ## Introduce
 
@@ -8,7 +8,7 @@
 - Language : Typescript
 - PackageManager : NPM
 - Build : TurboPack
-- Framework : NEXTJS
+- Framework : NextJS
 - Libraries
     - Date : momentJs
     - fetchAPI : axios
@@ -17,27 +17,30 @@
 - Test
     - 미정
 
-
-### Server
+### Server-Common Info
 - Language : Java 17
 - PackageManager & Build : Gradle
 - Framework : Springboot
 - Libraries
-    - Webflux
-    - SpringSecurity
-    - Mybatis
-    - SpringValidation
+  - Webflux
+  - SpringSecurity
+  - Mybatis
+  - SpringValidation
+  - Lombok
+  - SpringActuator
+  - SpringMail
+  - AwsSES
+
+### Resource-Server
+- Libraries
+
 - Test
-    - Junit
+  - Junit
 
-### Database
-- RDBMS : Mysql 8.0.36
-- DBMS : Redis ?
-
-
-### CI / CD
-- Github Action
-- Docker(미확정)
+### Batch-Server
+- Libraries
+  - SpringBatch
+  - SpringQuartz
 
 
 ## ERD
