@@ -1,6 +1,7 @@
 # Anamensis(작업중...)
 
 ## Introduce
+nextJs + Springboot + SpringBatch + SpringQuartz를 사용한 개인 프로젝트입니다.
 
 ## Tech Skills
 
