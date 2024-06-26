@@ -15,9 +15,9 @@ env:
     ARTIFACT: webHelpHI2-all.zip
     DOCKER_VERSION: 2.1.1479-p3869
     ALGOLIA_ARTIFACT: algolia-indexes-HI.zip
-    ALGOLIA_APP_NAME: OB29DXRV60
+    ALGOLIA_APP_NAME: ${{ secrets.ALGOLIA_APP_NAME }}
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-    ALGOLIA_INDEX_NAME: orrorin
+    ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
     CONFIG_JSON_PRODUCT: HI
     CONFIG_JSON_VERSION: 1.0
 
@@ -52,30 +52,27 @@ jobs:
             path: artifacts/${{ env.ALGOLIA_ARTIFACT }}
             retention-days: 7
 
-#    publish-indexes:
-#        needs: build
-#        runs-on: ubuntu-latest
-#        container:
-#          image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-2
-#
-#        steps:
-#            - uses: actions/checkout@v4
-#            - uses: actions/download-artifact@v4
-#              with:
-#                name: algolia-indexes
-#            - uses: montudor/action-zip@v1
-#              with:
-#                args: unzip -qq ${{ env.ALGOLIA_ARTIFACT }} -d algolia-indexes
-#            - run : echo "${{env.ALGOLIA_KEY}}"
-#            - run: |
-#                env "algolia-key=${{env.ALGOLIA_KEY}}" java -jar /opt/builder/help-publication-agent.jar \
-#                update-index \
-#                --application-name ${{env.ALGOLIA_APP_NAME}} \
-#                --index-name ${{env.ALGOLIA_INDEX_NAME}} \
-#                --product ${{env.CONFIG_JSON_PRODUCT}} \
-#                --version ${{env.CONFIG_JSON_VERSION}} \
-#                --index-directory algolia-indexes/ \
-#                2>&1 | tee algolia-update-index-log.txt
+    publish-indexes:
+      needs: [build, test, deploy]
+      runs-on: ubuntu-latest
+      container:
+        image: registry.jetbrains.team/p/writerside/builder/algolia-publisher:2.0.32-3
+      steps:
+        - name: Download artifact
+          uses: actions/download-artifact@v4
+          with:
+            name: docs
+        - name: Unzip artifact
+          run: |
+            unzip -O UTF-8 -qq '${{ env.ALGOLIA_ARTIFACT }}' -d algolia-indexes
+            env algolia-key='${{env.ALGOLIA_KEY}}' java -jar /opt/builder/help-publication-agent.jar \
+            update-index \
+            --application-name '${{env.ALGOLIA_APP_NAME}}' \
+            --index-name '${{env.ALGOLIA_INDEX_NAME}}' \
+            --product '${{env.CONFIG_JSON_PRODUCT}}' \
+            --version '${{env.CONFIG_JSON_VERSION}}' \
+            --index-directory algolia-indexes/ \
+            2>&1 | tee algolia-update-index-log.txt
 
     test:
         needs: build

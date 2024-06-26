@@ -3,8 +3,8 @@
 
 <instance-profile id="hi"
                  name="index"
-                 start-page="index.md">
-    <toc-element topic="index.md"/>
+                 start-page="start.md">
+    <toc-element topic="start.md"/>
 <!--    <toc-element toc-title="Profile">-->
 <!--        <toc-element topic="start.md"/>-->
 <!--        <toc-element toc-title="Carrer" sort-children="ascending">-->
