@@ -6,41 +6,41 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="60697e30">
-        <description>Redirect Fortpolio Page</description>
-        <accepts>01INFOMATE.html</accepts>
-    </rule>
-    <rule id="24832b08">
-        <description>Created after removal of "Empty MD Topic" from Portfolio</description>
-        <accepts>Empty-MD-Topic.html</accepts>
-    </rule>
-    <rule id="7c4d01d8">
-        <description>Created after removal of "Tutorial" from Portfolio</description>
-        <accepts>Tutorial.html</accepts>
-    </rule>
-    <rule id="e1304e7">
-        <description>Created after removal of "Tutorial" from Portfolio</description>
-        <accepts>Tutorial.html</accepts>
-    </rule>
-    <rule id="53c8dc49">
-        <description>Created after removal of "00. CLI" from Portfolio</description>
-        <accepts>docker_CLI.html</accepts>
-    </rule>
-    <rule id="29c0611f">
-        <description>Created after removal of "How to" from Portfolio</description>
-        <accepts>How-to.html</accepts>
-    </rule>
-    <rule id="102da052">
-        <description>Created after removal of "01. Class" from Portfolio</description>
-        <accepts>01-Class.html</accepts>
-    </rule>
-    <rule id="1944f601">
-        <description>Created after removal of "{" from Portfolio</description>
-        <accepts>dfsdfsf.html</accepts>
-    </rule>
-    <rule id="4faa1504">
-        <description>Created after removal of "Basic" from Portfolio</description>
-        <accepts>basic.html</accepts>
-    </rule>
+<!--    <rule id="60697e30">-->
+<!--        <description>Redirect Fortpolio Page</description>-->
+<!--        <accepts>01INFOMATE.html</accepts>-->
+<!--    </rule>-->
+<!--    <rule id="24832b08">-->
+<!--        <description>Created after removal of "Empty MD Topic" from Portfolio</description>-->
+<!--        <accepts>Empty-MD-Topic.html</accepts>-->
+<!--    </rule>-->
+<!--    <rule id="7c4d01d8">-->
+<!--        <description>Created after removal of "Tutorial" from Portfolio</description>-->
+<!--        <accepts>Tutorial.html</accepts>-->
+<!--    </rule>-->
+<!--    <rule id="e1304e7">-->
+<!--        <description>Created after removal of "Tutorial" from Portfolio</description>-->
+<!--        <accepts>Tutorial.html</accepts>-->
+<!--    </rule>-->
+<!--    <rule id="53c8dc49">-->
+<!--        <description>Created after removal of "00. CLI" from Portfolio</description>-->
+<!--        <accepts>docker_CLI.html</accepts>-->
+<!--    </rule>-->
+<!--    <rule id="29c0611f">-->
+<!--        <description>Created after removal of "How to" from Portfolio</description>-->
+<!--        <accepts>How-to.html</accepts>-->
+<!--    </rule>-->
+<!--    <rule id="102da052">-->
+<!--        <description>Created after removal of "01. Class" from Portfolio</description>-->
+<!--        <accepts>01-Class.html</accepts>-->
+<!--    </rule>-->
+<!--    <rule id="1944f601">-->
+<!--        <description>Created after removal of "{" from Portfolio</description>-->
+<!--        <accepts>dfsdfsf.html</accepts>-->
+<!--    </rule>-->
+<!--    <rule id="4faa1504">-->
+<!--        <description>Created after removal of "Basic" from Portfolio</description>-->
+<!--        <accepts>basic.html</accepts>-->
+<!--    </rule>-->
 
 </rules>
