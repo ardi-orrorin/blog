@@ -17,6 +17,9 @@
         <web-root>
             https://orrorin.store
         </web-root>
+        <algolia-index>
+            Writerside
+        </algolia-index>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
