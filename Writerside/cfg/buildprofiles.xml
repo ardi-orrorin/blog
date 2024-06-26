@@ -20,6 +20,12 @@
         <algolia-index>
             Writerside
         </algolia-index>
+        <algolia-id>
+            E5ZSA02H1X
+        </algolia-id>
+        <algolia-api-key>
+            ec6cfedc4c1ad406bde2eea7769ce443
+        </algolia-api-key>
     </variables>
     <build-profile instance="instance_id"/>
     <footer>
