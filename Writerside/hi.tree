@@ -341,14 +341,28 @@
                 <toc-element topic="git_Filter.md"/>
             </toc-element>
             <toc-element toc-title="Docker" sort-children="ascending">
-                <toc-element topic="docker_Glossary.md"/>
-                <toc-element toc-title="01. CLI" sort-children="ascending">
-                    <toc-element topic="docker_Rm.md"/>
-                    <toc-element topic="docker_Image.md"/>
-                    <toc-element topic="docker_Container.md"/>
+                <toc-element toc-title="Core">
+                    <toc-element topic="docker_Glossary.md"/>
+                    <toc-element toc-title="01. CLI" sort-children="ascending">
+                        <toc-element topic="docker_Rm.md"/>
+                        <toc-element topic="docker_Image.md"/>
+                        <toc-element topic="docker_Container.md"/>
+                    </toc-element>
+                    <toc-element topic="docker_Dockerfile.md"/>
+                    <toc-element topic="devops-docker-Docker-Compose.md"/>
                 </toc-element>
-                <toc-element topic="docker_Dockerfile.md"/>
-                <toc-element topic="devops-docker-Docker-Compose.md"/>
+                <toc-element toc-title="Example">
+                    <toc-element topic="docker_ubuntu_install.md"/>
+                </toc-element>
+            </toc-element>
+            <toc-element toc-title="Terraform">
+                <toc-element toc-title="Core">
+
+                </toc-element>
+                <toc-element toc-title="Example">
+
+                    <toc-element topic="terraform-tutorial.md"/>
+                </toc-element>
             </toc-element>
             <toc-element toc-title="ElasticStack">
             </toc-element>

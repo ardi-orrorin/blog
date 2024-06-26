@@ -12,10 +12,10 @@
             false
         </noindex-content>
         <generate-sitemap-url-prefix>
-            https://orrorin.store
+            https://ardi.kr
         </generate-sitemap-url-prefix>
         <web-root>
-            https://orrorin.store
+            https://ardi.kr
         </web-root>
         <algolia-index>
             Writerside
@@ -30,7 +30,7 @@
     <build-profile instance="instance_id"/>
     <footer>
         <link href="https://github.com/ardi-orrorin">Github</link>
-        <copyright>Copyright 2023. Orrorin All pictures cannot be copied without permission.</copyright>
+        <copyright>Copyright 2023. Ardi All pictures cannot be copied without permission.</copyright>
     </footer>
 
 </buildprofiles>
