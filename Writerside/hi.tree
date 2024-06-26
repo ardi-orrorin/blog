@@ -4,7 +4,7 @@
 <instance-profile id="hi"
                  name="Portfolio"
                  start-page="start.md">
-
+    <toc-element topic="start.md"/>
 <!--    <toc-element toc-title="Profile">-->
 <!--        <toc-element topic="start.md"/>-->
 <!--        <toc-element toc-title="Carrer" sort-children="ascending">-->
@@ -414,4 +414,6 @@
             </toc-element>
         </toc-element>
     </toc-element>
+<!--    <toc-element topic="introduce.md"/>-->
+
 </instance-profile>
