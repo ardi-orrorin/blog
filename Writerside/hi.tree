@@ -360,6 +360,8 @@
 
                     <toc-element toc-title="Block">
 
+                        <toc-element topic="terraform-block-variable.md"/>
+                        <toc-element topic="terraform-block-data.md"/>
                         <toc-element topic="terraform-block-resource.md"/>
                     </toc-element>
                 </toc-element>
