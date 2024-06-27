@@ -358,6 +358,10 @@
             <toc-element toc-title="Terraform">
                 <toc-element toc-title="Core">
 
+                    <toc-element toc-title="Block">
+
+                        <toc-element topic="terraform-block-resource.md"/>
+                    </toc-element>
                 </toc-element>
                 <toc-element toc-title="Example">
 
