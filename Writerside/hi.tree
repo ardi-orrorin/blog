@@ -358,8 +358,16 @@
             <toc-element toc-title="Terraform">
                 <toc-element toc-title="Core">
 
+                    <toc-element topic="terraform-loop.md">
+                        <toc-element topic="terraform-loop-dynamic.md"/>
+                        <toc-element topic="for-each.md"/>
+                        <toc-element topic="terraform-loop-count.md"/>
+                    </toc-element>
+                    <toc-element topic="terraform-loop-for.md"/>
                     <toc-element toc-title="Block">
 
+                        <toc-element topic="terraform-block-output.md"/>
+                        <toc-element topic="terraform-block-local.md"/>
                         <toc-element topic="terraform-block-variable.md"/>
                         <toc-element topic="terraform-block-data.md"/>
                         <toc-element topic="terraform-block-resource.md"/>
