@@ -358,6 +358,7 @@
             <toc-element toc-title="Terraform">
                 <toc-element toc-title="Core">
 
+                    <toc-element topic="terraform-core-CLI.md"/>
                     <toc-element topic="Syntax.md">
                         <toc-element topic="Provisioner.md"/>
                         <toc-element topic="terraform-loop-for.md"/>
@@ -370,6 +371,7 @@
                     </toc-element>
                     <toc-element toc-title="Block">
 
+                        <toc-element topic="moved.md"/>
                         <toc-element topic="terraform-block-output.md"/>
                         <toc-element topic="terraform-block-local.md"/>
                         <toc-element topic="terraform-block-variable.md"/>
