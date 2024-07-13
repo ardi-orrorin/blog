@@ -358,8 +358,6 @@
             </toc-element>
             <toc-element toc-title="Terraform">
                 <toc-element toc-title="Core">
-
-                    <toc-element topic="terraform-State.md"/>
                     <toc-element topic="terraform-core-CLI.md"/>
                     <toc-element topic="Syntax.md">
                         <toc-element topic="Provisioner.md"/>
