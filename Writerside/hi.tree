@@ -267,6 +267,9 @@
                 </toc-element>
             </toc-element>
         <toc-element topic="MarkDown.md">
+            <toc-element topic="PlantUML.md">
+                <toc-element topic="plantuml-SequenceDiagram.md"/>
+            </toc-element>
             <toc-element topic="mardown-Mermaid.md">
                 <toc-element topic="markdown-mermaid-SequenceDiagram.md"/>
                 <toc-element topic="markdown-mermaid-Flowchart.md"/>
@@ -370,7 +373,6 @@
                         <toc-element topic="Condition.md"/>
                     </toc-element>
                     <toc-element toc-title="Block">
-
                         <toc-element topic="terraform-block-provider.md"/>
                         <toc-element topic="moved.md"/>
                         <toc-element topic="terraform-block-output.md"/>
@@ -381,7 +383,6 @@
                     </toc-element>
                 </toc-element>
                 <toc-element toc-title="Example">
-
                     <toc-element topic="terraform-tutorial.md"/>
                 </toc-element>
             </toc-element>

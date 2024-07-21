@@ -43,4 +43,8 @@
 <!--        <accepts>basic.html</accepts>-->
 <!--    </rule>-->
 
+    <rule id="38805889">
+        <description>Created after removal of "PlantUML" from Ardi 기억 저장소</description>
+        <accepts>PlantUML.html</accepts>
+    </rule>
 </rules>
