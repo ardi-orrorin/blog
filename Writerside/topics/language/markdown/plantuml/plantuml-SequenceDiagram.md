@@ -301,9 +301,51 @@ test2 -> test1: end
 ```plantuml
 @startuml
 test1 -> test2: test start
+note right: test start note
+
+@enduml
+
+## 여러줄 
+@startuml
+test1 -> test2: test start
 note right of test2
-    test1
-end note
+    test1sdf
+    sdfsdf
+    dfsdf
+    sdf
+    end note
+test2 -> test1: test end
+@enduml
+
+
+@startuml
+test1 -> test2: test start
+note over test1
+    test1sdf
+    sdfsdf
+    dfsdf
+    sdf
+    end note
+test2 -> test1: test end
+@enduml
+
+@startuml
+test1 -> test2: test start
+note over test1, test2
+    note over test1,test2
+    end note
+test2 -> test1: test end
+@enduml
+
+
+@startuml
+test1 -> test2: test start
+note over test1,test2 #ff5500
+
+    note over test1,test2
+    color = #ff5500
+    end note
+    
 test2 -> test1: test end
 @enduml
 ```
@@ -311,9 +353,51 @@ test2 -> test1: test end
 ```text
 @startuml
 test1 -> test2: test start
+note right: test start note
+
+@enduml
+
+## 여러줄 
+@startuml
+test1 -> test2: test start
 note right of test2
-    test1
-end note
+    test1sdf
+    sdfsdf
+    dfsdf
+    sdf
+    end note
+test2 -> test1: test end
+@enduml
+
+
+@startuml
+test1 -> test2: test start
+note over test1
+    test1sdf
+    sdfsdf
+    dfsdf
+    sdf
+    end note
+test2 -> test1: test end
+@enduml
+
+@startuml
+test1 -> test2: test start
+note over test1, test2
+    note over test1,test2
+    end note
+test2 -> test1: test end
+@enduml
+
+
+@startuml
+test1 -> test2: test start
+note over test1,test2 #ff5500
+
+    note over test1,test2
+    color = #ff5500
+    end note
+    
 test2 -> test1: test end
 @enduml
 ```
@@ -426,6 +510,302 @@ end
 @enduml
 ```
 
+### 지연
+```plantuml
+@startuml
+test1 -> test2 : test start
+
+...wait 5 seconds...
+
+test1 -> test3 : test start
+
+...wait 15 seconds...
+
+test1 -> test4  : test start
+@enduml
+```
+
+```text
+@startuml
+test1 -> test2 : test start
+
+...wait 5 seconds...
+
+test1 -> test3 : test start
+
+...wait 15 seconds...
+
+test1 -> test4  : test start
+@enduml
+```
+
+### 줄바꿈, 공백
+```plantuml
+@startuml
+title 줄바꿈
+a -> b : test\nstart
+b -> c : test\nend
+@enduml
+
+@startuml
+title 공백
+a -> b : test\nstart
+|||
+b -> c : test\nend
+@enduml
+```
+
+```text
+@startuml
+title 줄바꿈
+a -> b : test\nstart
+b -> c : test\nend
+@enduml
+
+@startuml
+title 공백
+a -> b : test\nstart
+|||
+b -> c : test\nend
+@enduml
+
+```
+
+### 라이프라인
+```plantuml
+@startuml
+User -> A: DoWork
+activate A
+A -> B: Create Request
+|||
+B -> C: DoWork
+
+C -> C: Create Response\n wait 5 seconds
+
+C -> B: Send Response
+
+B -> A: Response Created
+
+A -> User: Done
+deactivate A
+
+@enduml
+
+@startuml
+autoactivate on
+User -> System: DoWork
+System -> System: Internal call
+return thread 1 end
+return success end
+@enduml
+
+```
 
 
+```text
 
+@startuml
+User -> A: DoWork
+activate A
+A -> B: Create Request
+|||
+B -> C: DoWork
+
+C -> C: Create Response\n wait 5 seconds
+
+C -> B: Send Response
+
+B -> A: Response Created
+
+A -> User: Done
+deactivate A
+@enduml
+
+@startuml
+
+autoactivate on
+
+User -> System: DoWork
+System -> System: Internal call
+
+return thread 1 end
+return success end
+
+@enduml
+```
+
+### 활성, 비활성, 생성
+
+```plantuml
+@startuml
+test1 -> test2 ++ : 활성
+test2 -> test3 -- : 비활성
+test1 -> test4 ** : 인스턴스 생성
+test4 -> test1 !! : 인스턴스 제거
+@enduml
+
+@startuml
+test1 -> test2 ++-- :활성, 비활성 혼용
+test2 -> test1 ++-- :활성, 비활성 혼용
+test1 -> test2 --++ :활성, 비활성 혼용
+test2 -> test1 --++ :활성, 비활성 혼용
+@enduml
+```
+
+```text
+@startuml
+test1 -> test2 ++ : 활성
+test2 -> test3 -- : 비활성
+test1 -> test4 ** : 인스턴스 생성
+test4 -> test1 !! : 인스턴스 제거
+@enduml
+
+@startuml
+test1 -> test2 ++-- :활성, 비활성 혼용
+test2 -> test1 ++-- :활성, 비활성 혼용
+test1 -> test2 --++ :활성, 비활성 혼용
+test2 -> test1 --++ :활성, 비활성 혼용
+@enduml
+```
+
+### incoming, outgoing
+```plantuml
+
+@startuml
+?-> test1 : start
+[-> test2 : start 2
+test2 ->] : end 2
+test1 ->? : end ?
+test1 ->] : end ]
+@enduml
+
+```
+```text
+@startuml
+?-> test1 : start
+[-> test2 : start 2
+test2 ->] : end 2
+test1 ->? : end ?
+test1 ->] : end ]
+@enduml
+```
+
+
+### anchors and duration
+```plantuml
+@startuml
+!pragma teoz true
+
+{start} test1 -> test2 : start
+test2 -> test3 : processing
+
+|||
+
+test3 -> test2 : response
+{end} test2 -> test1 : end
+
+{start} <-> {end} : duration 20 seconds
+
+@enduml
+```
+```text
+@startuml
+!pragma teoz true
+
+{start} test1 -> test2 : start
+test2 -> test3 : processing
+
+|||
+
+test3 -> test2 : response
+{end} test2 -> test1 : end
+
+{start} <-> {end} : duration 20 seconds
+
+@enduml
+
+```
+
+### box
+```plantuml
+@startuml
+
+skinparam sequenceMessageAlign center
+skinparam ParticipantPadding 40
+skinparam BoxPadding 20
+
+box "A to B"
+participant A
+participant B
+end box
+
+box "C to D"
+participant C
+participant D
+end box
+
+A -> B : box start
+B -> A : box end
+
+B -> C : Connect
+
+C -> D : box start
+D -> C : box end
+@enduml
+```
+
+```text
+@startuml
+skinparam sequenceMessageAlign center
+skinparam ParticipantPadding 40
+skinparam BoxPadding 20
+
+box "A to B"
+participant A
+participant B
+end box
+
+box "C to D"
+participant C
+participant D
+end box
+
+A -> B : box start
+B -> A : box end
+
+B -> C : Connect
+
+C -> D : box start
+D -> C : box end
+@enduml
+```
+
+### arrow
+```plantuml
+@startuml
+skinparam sequenceMessageAlign center
+skinparam arrowPadding 20
+participant Alice as a
+participant Bob   as b
+a ->     b : ""->   ""
+a ->>    b : ""->>  ""
+a -\     b : ""-\   ""
+a -\\    b : ""-\\\\""
+a -/     b : ""-/   ""
+a -//    b : ""-//  ""
+a ->x    b : ""->x  ""
+a x->    b : ""x->  ""
+a o->    b : ""o->  ""
+a ->o    b : ""->o  ""
+a o->o   b : ""o->o ""
+a <->    b : ""<->  ""
+a o<->o  b : ""o<->o""
+a x<->x  b : ""x<->x""
+a ->>o   b : ""->>o ""
+a -\o    b : ""-\o  ""
+a -\\o   b : ""-\\\\o""
+a -/o    b : ""-/o  ""
+a -//o   b : ""-//o ""
+a x->o   b : ""x->o ""
+@enduml
+```
